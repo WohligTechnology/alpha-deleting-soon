@@ -95,13 +95,49 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 
-    $scope.petslider = [
-     'img/pet/pdf-file.png',
-     'img/pet/pdf-file.png',
-     'img/pet/pdf-file.png',
-     'img/pet/pdf-file.png',
-     'img/pet/pdf-file.png'
-];
+    $(window).load(function() {
+      // The slider being synced must be initialized first
+      $('#carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 210,
+        itemMargin: 5,
+        asNavFor: '#slider'
+      });
+
+      $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel"
+      });
+    });
+
+    $scope.flexprofile = [{
+         image: "img/PET/prof.png",
+         desc: "We have been very satisfied with Alpha Plastomers in every terms, may it be quality, timely supply, new product development or innovation. They have put us at complete ease with respect to our product packaging. We can now concentrate on our product & market developments.",
+         name: "Mr.Sachin Gupta",
+         company: "Kanika Enterprises",
+         location: "New Delhi"
+     },
+     {
+       image: "img/PET/prof.png",
+       desc: "We have been very satisfied with Alpha Plastomers in every terms, may it be quality, timely supply, new product development or innovation. They have put us at complete ease with respect to our product packaging. We can now concentrate on our product & market developments.",
+       name: "Mr.Sachin Gupta",
+       company: "Kanika Enterprises",
+       location: "New Delhi"
+        },
+        {
+          image: "img/PET/prof.png",
+          desc: "We have been very satisfied with Alpha Plastomers in every terms, may it be quality, timely supply, new product development or innovation. They have put us at complete ease with respect to our product packaging. We can now concentrate on our product & market developments.",
+          name: "Mr.Sachin Gupta",
+          company: "Kanika Enterprises",
+          location: "New Delhi"
+        }];
+
 })
 
 .controller('FormCtrl', function($scope, TemplateService, NavigationService, $timeout) {
