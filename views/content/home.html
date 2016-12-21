@@ -97,13 +97,124 @@
     <div class="row">
       <div class="col-md-12">
         <div class="client">
-          <div class="row-flex">
-            <div class="col-flex">
-              
-            </div>
-          </div>
+          <flex-slider flex-slide="item in client track by $index" animation="slide" item-width="278" item-margin="5" animationloop="true" move="1" slideshowSpeed=1000>
+              <li>
+                <div class="cl-box">
+                    <img src="{{item}}" alt="">
+                </div>
+              </li>
+          </flex-slider>
+
         </div>
       </div>
     </div>
+  </div>
+</section>
+<section>
+  <div class="jr-bg">
+    <div class="container">
+      <div class="row">
+        <div class="jr-title">
+          <h3 class="text-up color-red">aplha's</h3>
+          <h3 class="text-up color-red">journey</h3>
+        </div>
+        <div class="col-md-2">
+          <div class="j1">
+            <img src="img/j1.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="j2">
+            <div class="jr-text display-inline">
+              <h4 class="color-red">2016</h4>
+              <p>Introduce
+Collation Shrink
+and Stretch Films</p>
+            </div>
+          <div class="display-inline">
+              <img src="img/j2.jpg" alt="">
+          </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="j3">
+            <div class="jr-text display-inline">
+              <h4 class="color-red">2015</h4>
+              <p>Doubled POF
+Shrink Film
+capacity to
+3,600 MT/year</p>
+            </div>
+            <img src="img/j3.jpg" alt="">
+
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="j4">
+            <div class="display-inline">
+              <img src="img/j4.jpg" alt="">
+            </div>
+            <div class="jr-text display-inline">
+              <h4 class="color-red">2013</h4>
+              <p>Increased POF
+Shrink Film Capacity</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <div class="text-center">
+        <button type="button" name="button" class="text-up">view journey</button>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="news-bg">
+    <div class="ribbon-red">
+      <img src="" alt="">
+    </div>
+    <div class="news-slider">
+      <div class="container">
+        <div class="row">
+      <div class="col-md-12">
+        <div class="text-center">
+          <h2>LATEST NEWS</h2>
+        </div>
+        <flex-slider flex-slide="item in news track by $index" animation="slide" item-width="340" item-margin="40" animationloop="true" move="1" slideshowSpeed=1000>
+            <li>
+              <div class="nw-box">
+                <div class="al-relative">
+                  <img ng-src="{{item.img}}" alt="">
+                  <span>{{item.date}}</span>
+                </div>
+                <div class="nw-title">
+                  <p>{{item.title}}</p>
+                </div>
+                <div class="nw-link">
+                  <a href="" class="text-up">read more</a>
+                </div>
+              </div>
+            </li>
+        </flex-slider>
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section>
+  <div class="map al-relative">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4457.06591579484!2d72.76595935090985!3d21.153706937399495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e510c7130eb%3A0x35506354c4ef7dea!2sAlpha+Plastomers!5e0!3m2!1sen!2sin!4v1482304925785" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+<div class="">
+  <div class="add">
+    <h4 class="color-red">Aplha Plastomers</h4>
+    <i class="fa fa-phone"> <span>+91 72019 89000</span></i>
+    <i class="fa fa-envelope"> <span>nfo@alpha.co.in</span></i>
+    <i class="fa fa-home"> <span>506, Union Heights, <br> Beside Rahulraj Mall, Vesu <br> Surat-395 007, Gujarat, INDIA</span></i>
+  </div>
+</div>
   </div>
 </section>
