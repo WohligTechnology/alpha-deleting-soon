@@ -82,6 +82,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 
+    $scope.petslider = [
+     'img/pet/pdf-file.png',
+     'img/pet/pdf-file.png',
+     'img/pet/pdf-file.png',
+     'img/pet/pdf-file.png',
+     'img/pet/pdf-file.png'
+];
 })
 
 .controller('FormCtrl', function($scope, TemplateService, NavigationService, $timeout) {
