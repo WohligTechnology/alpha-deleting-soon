@@ -14,6 +14,35 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     ];
 })
 
+.controller('AboutUsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("aboutus"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("About Us"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+})
+.controller('EventsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("events"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Events"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+})
+.controller('CareersCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("careers"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Careers"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+})
+.controller('NewsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("news"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("News"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+})
+
 .controller('FormCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("form"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Form"); //This is the Title of the Website
