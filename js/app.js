@@ -33,6 +33,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'NewsDetailCtrl'
         })
+        .state('plant-location', {
+            url: "/plant-location",
+            templateUrl: "views/template.html",
+            controller: 'PlantLocationCtrl'
+        })
         .state('careers', {
             url: "/careers",
             templateUrl: "views/template.html",
