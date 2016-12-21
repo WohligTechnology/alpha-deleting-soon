@@ -33,6 +33,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'NewsDetailCtrl'
         })
+        .state('quality-policy', {
+            url: "/quality-policy",
+            templateUrl: "views/template.html",
+            controller: 'QualityPolicyCtrl'
+        })
         .state('plant-location', {
             url: "/plant-location",
             templateUrl: "views/template.html",

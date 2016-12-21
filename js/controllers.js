@@ -47,6 +47,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.navigation = NavigationService.getnav();
 
 })
+.controller('QualityPolicyCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("quality-policy"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Quality Policy"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+})
 .controller('AboutUsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("aboutus"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("About Us"); //This is the Title of the Website
