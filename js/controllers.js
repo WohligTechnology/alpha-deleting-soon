@@ -12,6 +12,33 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         'http://flexslider.woothemes.com/images/kitchen_adventurer_donut.jpg',
         'http://flexslider.woothemes.com/images/kitchen_adventurer_caramel.jpg'
     ];
+    $scope.client = [
+     'img/client/c1.jpg',
+     'img/client/c2.jpg',
+     'img/client/c3.jpg',
+     'img/client/c4.jpg',
+     'img/client/c5.jpg',
+     'img/client/c6.jpg'
+ ];
+ $scope.news = [
+{
+"img":"img/n1.jpg",
+"date":"September 2013",
+"title":"Meet Alpha’s Plastic Super Family in Mexico!"
+},{
+"img":"img/n2.jpg",
+"date":"November 2013",
+"title":"A major stride for Alpha at the Expo Pack Mexico"
+},{
+"img":"img/n3.jpg",
+"date":"October 2013",
+"title":"Alpha Pharma Roorkee commissions ASB Nissei 12M machine"
+},{
+"img":"img/n1.jpg",
+"date":"September 2013",
+"title":"Meet Alpha’s Plastic Super Family in Mexico!"
+}
+ ];
 })
 
 .controller('AboutUsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
