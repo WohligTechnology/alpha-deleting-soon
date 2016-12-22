@@ -58,6 +58,21 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'PetBottlesCtrl'
         })
+        .state('pof', {
+            url: "/pof",
+            templateUrl: "views/template.html",
+            controller: 'PofShrinkFilmCtrl'
+        })
+        .state('bags-liners', {
+            url: "/bags-liners",
+            templateUrl: "views/template.html",
+            controller: 'Bags-LinersCtrl'
+        })
+        .state('speciality-film', {
+            url: "/speciality-film",
+            templateUrl: "views/template.html",
+            controller: 'Speciality-FilmCtrl'
+        })
         .state('form', {
             url: "/form",
             templateUrl: "views/template.html",
