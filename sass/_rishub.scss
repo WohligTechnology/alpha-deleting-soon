@@ -1,4 +1,7 @@
 //events
+.black-sec{
+  background: url("../img/black-banner.png");
+}
 .events{
   .content-sec{
     padding: 40px 25px;
@@ -7,7 +10,124 @@
       letter-spacing: 0.2px;
     }
   }
+  .events-sec{
+    .row{overflow: hidden;}
+    padding-bottom: 5%;
+  }
   .event-info{
     background: url("../img/black-banner.png");
+    padding-bottom: 500px;
+margin-bottom: -500px;
+  .text-sec{
+      padding: 50px 30px;
+    }
+    h3{
+      margin-top: 0;
+      color: $brand-danger;
+      font-weight: 700;
+    }
+    p{
+      color: #fff;
+      font-size: 16px;
+    }
+    .btn-know{
+      background-color: transparent;
+color: $white;
+border: 2px solid;
+border-radius: 5px;
+font-weight: 700;
+    }
+
+  }
+}
+
+.left-side {
+    height: 100%;
+    padding-bottom: 500px;
+margin-bottom: -500px;
+  }
+
+.right-side {
+  height: 100%;
+
+}
+.pd0{
+  padding: 0;
+}
+.date-sec{
+  -webkit-clip-path: polygon(14% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(14% 0, 100% 0%, 100% 100%, 0% 100%);
+background-color: red;
+display: inline-block;
+    background: red;
+    position: absolute;
+    right: 0;
+    padding: 10px 16px 10px 30px;
+    bottom: 0;
+    span{
+      color: #fff;
+     font-size: 16px;
+     font-weight: 700;
+     letter-spacing: 1px;
+    }
+}
+.news-img{
+  position: relative;
+}
+.news-sec{
+  h4{
+    color: $brand-danger;
+    font-weight: 700;
+font-size: 20px;
+text-transform: uppercase;
+  }
+  p{
+    font-size: 16px;
+text-align: justify;
+letter-spacing: 0.3px;
+line-height: 18px;
+  }
+  .btn-default{
+    border: 2px solid $brand-danger;
+    color: $brand-danger;
+    font-weight: 700;
+    padding: 4px 10px 2px;
+    text-transform: uppercase;
+  }
+}
+.pet{
+  .black-sec{
+    padding-bottom: 20px;
+    h3{
+    color: $brand-danger;
+        padding-top: 35px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    span{
+      color: $white;
+      font-size: 18px;
+      padding: 5px;
+    }
+    .pdf-1{
+      padding: 10px;
+      display: inline-block;
+    }
+    .pdf-in{
+      padding: 5px;
+    }
+    img{
+      width: 25px;
+      vertical-align: bottom;
+
+    }
+        margin-top: -45px;
+  }
+}
+.petslider{
+  h3{
+    color: $brand-danger;
+      font-size: 30px;
+        font-weight: 700;
   }
 }
