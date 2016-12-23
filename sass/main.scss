@@ -242,7 +242,7 @@ display: inline-block;
     }
     p{
       font-size: 16px;
-      letter-spacing: 0.2px;
+      lette40pxr-spacing: 0.2px;
       text-align: justify;
     }
   }
@@ -277,6 +277,13 @@ display: inline-block;
 
 
 .form-sec{
+  .sub-btn{
+    border: 1px solid #e21e23;
+    color: #e21e23;
+    padding: 4px 12px;
+    font-weight: 700;
+    font-size: 16px;
+  }
   input{
     @include placeholder{
       color: #ccc;
@@ -289,7 +296,8 @@ display: inline-block;
 border-bottom: 1px solid #ccc;
 }
   .submit-sec{
-    margin-top: 30px;
+    margin-top: 4%;
+    margin-bottom: 10%;
   }
 }
 .upload-btn{
