@@ -1,10 +1,7 @@
 <div class="careers">
   <div class="banner">
-  <img src="" alt="" class="img-responsive">
-  <div class="banner-text">
-    <h2>CAREERS</h2>
-  </div>
-  <img src="img/banner-ribbon.png" alt="" class="img-responsive">
+  <img src="img/careers/careers.png" alt="" class="img-responsive">
+  <img src="img/banner-ribbon.png" alt="" class="img-responsive banner-rib">
   </div>
   <div class="red-sec">
     <div class="container">
@@ -16,7 +13,7 @@
     </div>
   </div>
     <div class="container">
-  <form>
+  <form class="form-sec">
     <div class="row">
       <div class="col-md-4 col-md-offset-2">
         <div class="form-group">
@@ -39,12 +36,19 @@
     <div class="row">
       <div class="col-md-4  col-md-offset-2">
     <div class="form-group">
-    <input id="input-1" type="file" class="file form-control" placeholder="upload your resume">
+
+    <div class="upload-btn text-right">
+      <span>Upload your resume</span>
+      <input id="upload" type="file" class="file form-control display-none" placeholder="upload your resume">
+      <label for="upload" type="button" class="upl-label">BROWSE</label>
+    </div>
+    <!-- <label for="file">Choose a file</label> -->
      </div>
       </div>
       <div class="col-md-4">
     <div class="form-group">
-    <input type="text-area" class="form-control" id="message" placeholder="Message">
+    <input type="text-area" class="form-control" rows="3" id="message" placeholder="Message">
+    <!-- <textarea class="form-control" rows="3" id="message" placeholder="Message"></textarea> -->
      </div>
       </div>
     </div>
