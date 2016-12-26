@@ -128,7 +128,20 @@ firstapp.directive('fancybox', function($document) {
         }
     };
 });
-
+firstapp.directive('autoHeightfixed', function($compile, $parse) {
+    return {
+        restrict: 'EA',
+        replace: false,
+        link: function($scope, element, attrs) {
+            var $element = $(element);
+            var windowHeight = $(window).height() - 20;
+            var addHeight = function() {
+                $element.css("height", windowHeight);
+            };
+            addHeight();
+        }
+    };
+});
 firstapp.directive('autoHeight', function($compile, $parse) {
     return {
         restrict: 'EA',

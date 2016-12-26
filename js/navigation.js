@@ -29,7 +29,7 @@ var navigationservice = angular.module('navigationservice', [])
         anchor: "clients",
         subnav: []
     },{
-        name: "News&Events",
+        name: "News & Events",
         classis: "active",
         anchor: "news-event",
         subnav: []
