@@ -217,6 +217,26 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
           image: "img/pof/pills.png",
           desc: "Pharmaceutical",
          },
+        {
+          image: "img/pof/pills.png",
+          desc: "Pharmaceutical",
+         },
+        {
+          image: "img/pof/pills.png",
+          desc: "Pharmaceutical",
+         },
+        {
+          image: "img/pof/pills.png",
+          desc: "Pharmaceutical",
+         },
+        {
+          image: "img/pof/pills.png",
+          desc: "Pharmaceutical",
+         },
+        {
+          image: "img/pof/pills.png",
+          desc: "Pharmaceutical",
+         },
          {
            image: "img/pof/pills.png",
            desc: "Pharmaceutical",
