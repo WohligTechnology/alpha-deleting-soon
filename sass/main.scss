@@ -97,7 +97,7 @@ a {
 footer {
     font-size: 12px;
     background-color: #eee;
-    padding: 10px 0;
+      padding: 18px 0;
 
     p {
         margin: 0;
@@ -180,7 +180,8 @@ footer {
   background-color: #181818;
   p{
     color: #fff;
-    font-size: 15px;
+    font-size: 18px;
+        padding-top: 10px;
     a{
       text-decoration: none;
       color: #fff;
@@ -604,6 +605,33 @@ footer {
             display: none;
         }
     }
+}
+.up-arrow {
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background: white;
+        margin: 0px -16px 0px 0px;
+        a{
+              vertical-align: -webkit-baseline-middle;
+        }
+    /* padding: 10px 20px; */
+    i{
+      font-size: 22px;
+      margin: 0px 0px;
+      padding: 13px 23px 5px 23px;
+      color: black;
+    }
+}
+.down-arrow{
+  @extend .up-arrow;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+clip-path: polygon(50% 100%, 0 0, 100% 0);
+a{
+      vertical-align: super;
+}
+i{
+    padding: 5px 23px 16px 23px;
+}
 }
 @import "rishub";
 @import "fancybox-override";
