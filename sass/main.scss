@@ -97,7 +97,7 @@ a {
 footer {
     font-size: 12px;
     background-color: #eee;
-      padding: 18px 0;
+    padding: 18px 0;
 
     p {
         margin: 0;
@@ -176,34 +176,35 @@ footer {
     min-height: 450px;
 }
 
-.foot-color{
-  background-color: #181818;
-  p{
-    color: #fff;
-    font-size: 18px;
+.foot-color {
+    background-color: #181818;
+
+    p {
+        color: #fff;
+        font-size: 18px;
         padding-top: 10px;
-    a{
-      text-decoration: none;
-      color: #fff;
 
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
     }
-  }
-  li{
-    a{
-      text-decoration: none;
 
+    li {
+        a {
+            text-decoration: none;
+        }
+        color: #fff;
     }
-          color: #fff;
-  }
 }
-.social-sec{
-  margin-bottom: 0;
 
-  li{
+.social-sec {
+    margin-bottom: 0;
 
-    // padding: 10px;
-    display: inline-block;
-  }
+    li {
+        // padding: 10px;
+        display: inline-block;
+    }
 }
 
 .full-img {
@@ -270,16 +271,20 @@ footer {
     position: relative;
 }
 ///about us
-.text-head{
-  letter-spacing: 0.2px;
+
+.text-head {
+    letter-spacing: 0.2px;
 }
+
 .about-us {
-  .black-sec{
-    margin: 60px;
-  }
-.black-holder{
-  position: relative;
-}
+    .black-sec {
+        margin: 60px;
+    }
+
+    .black-holder {
+        position: relative;
+    }
+
     .pdt-40 {
         padding: 40px 0;
     }
@@ -287,17 +292,17 @@ footer {
     .vis-mis {
         background: url("../img/black-banner.png");
         position: relative;
-  padding: 0 30px 5px;
+        padding: 0 30px 5px;
         margin: 40px;
         background-size: cover;
         color: $white;
-        p{
-          font-size: 16px;
-          letter-spacing: 0.2px;
-          line-height: 22px;
-        }
-            // margin-top: 30px;
 
+        p {
+            font-size: 16px;
+            letter-spacing: 0.2px;
+            line-height: 22px;
+        }
+        // margin-top: 30px;
         .vis-head {
             padding-top: 35px;
             // font-weight: bold;
@@ -332,15 +337,15 @@ footer {
     position: absolute;
     right: 4%;
     width: 60px;
-        top: -75px;
+    top: -75px;
 }
 
 .black-rib {
-  position: absolute;
-      left: 0;
-      top: -30px;
-      z-index: 1;
-      width: 140px;
+    position: absolute;
+    left: 0;
+    top: -30px;
+    z-index: 1;
+    width: 140px;
 }
 ////careers
 
@@ -352,7 +357,7 @@ footer {
     .sub-btn {
         border: 1px solid #e21e23;
         color: #e21e23;
-            padding: 4px 10px 2px;
+        padding: 4px 10px 2px;
         font-weight: 700;
         font-size: 16px;
     }
@@ -410,12 +415,14 @@ footer {
         font-size: 16px;
         letter-spacing: 0.2px;
     }
-        .list-cont{
-          color: #fff;
-          h3{
+
+    .list-cont {
+        color: #fff;
+
+        h3 {
             text-transform: uppercase;
-          }
         }
+    }
 }
 
 .nav > li > a {
@@ -606,32 +613,101 @@ footer {
         }
     }
 }
+
 .up-arrow {
     -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background: white;
-        margin: 0px -16px 0px 0px;
-        a{
-              vertical-align: -webkit-baseline-middle;
-        }
+    margin: 0 -16px 0 0;
+
+    a {
+        vertical-align: -webkit-baseline-middle;
+    }
     /* padding: 10px 20px; */
-    i{
-      font-size: 22px;
-      margin: 0px 0px;
-      padding: 13px 23px 5px 23px;
-      color: black;
+    i {
+        font-size: 22px;
+        margin: 0;
+        padding: 13px 23px 5px;
+        color: black;
     }
 }
-.down-arrow{
-  @extend .up-arrow;
-  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
-clip-path: polygon(50% 100%, 0 0, 100% 0);
-a{
-      vertical-align: super;
+
+.down-arrow {
+    @extend .up-arrow;
+    -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+
+    a {
+        vertical-align: super;
+    }
+
+    i {
+        padding: 5px 23px 16px;
+    }
 }
-i{
-    padding: 5px 23px 16px 23px;
+
+.jr-bg {
+    background: url('/img/bg-journey.jpg')no-repeat;
+    background-size: cover;
 }
+
+.btn-red {
+    @include button-variant($white,$brand-danger, $brand-danger);
+}
+
+.j1 {
+    text-align: center;
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+    }
+}
+
+.j2 {
+    position: relative;
+
+    .jr2-text {
+        width: 130px;
+        position: absolute;
+        left: 0;
+        top: 53px;
+
+        h4 {
+            font-weight: 700;
+            font-size: 30px;
+            margin-top: 0;
+        }
+
+        p {
+            font-family: 'roboto';
+            font-size: 16px;
+            margin: 0;
+            line-height: 120%;
+            font-weight: 600;
+        }
+    }
+
+    .jr2-img {
+        position: absolute;
+        right: 0;
+
+        img {
+            width: 255px;
+        }
+    }
+}
+.j3{
+  @extend .j2;
+  .jr3-text{
+    width: 105px;
+top: 0px;
+  }
+  .jr3-img{
+    position: absolute;
+right: 15px;
+top: 45px;
+  }
 }
 @import "rishub";
 @import "fancybox-override";
