@@ -1,6 +1,7 @@
 //events
 .black-sec{
   background: url("../img/black-banner.png");
+  background-size: cover;
 }
 .events{
   .content-sec{
@@ -18,6 +19,7 @@
     background: url("../img/black-banner.png");
     padding-bottom: 500px;
 margin-bottom: -500px;
+// background-size: cover;
   .text-sec{
       padding: 50px 30px;
     }
@@ -154,11 +156,11 @@ line-height: 18px;
 .pet{
   .black-sec{
     padding-bottom: 20px;
-    h3{
+    h2{
     color: $brand-danger;
         padding-top: 35px;
         font-size: 30px;
-        font-weight: 700;
+
     }
     span{
       color: $white;
@@ -210,6 +212,7 @@ top: -28px;
   letter-spacing: 3.3px;
 }
 .profile-desc{
+  margin-top: 5%;
   padding-bottom: 5px;
   background-color: #ccc;
   padding-top: 5px;
@@ -226,7 +229,8 @@ top: -28px;
         z-index: 1;
     position: absolute;
     right: 0;
-    width: 175px;
+    width: 165px;
+        top: 65px;
   }
 .profile-info{
   p{
@@ -247,6 +251,7 @@ top: -28px;
   h3,h4{
     color: $brand-danger;
     font-weight: 700;
+    letter-spacing: 0.2px;
   }
   .flexslider{
    background: transparent;
@@ -280,7 +285,7 @@ border-bottom: none;
 .enquiry-sec{
   h3{
     color: $brand-danger;
-    font-weight: 700;
+
     margin: 3px 0px;
   }
 }
@@ -298,6 +303,7 @@ border-bottom: none;
 }
 .table-sec{
 position: relative;
+
 .size-table{
   tbody{
     background-color: #ccc;
@@ -318,27 +324,46 @@ position: relative;
 .table-in{
   position: absolute;
   top: -35px;
+  width: 170px;
 }
 }
 .pd120{
-  padding: 0 120px;
+      padding: 40px 120px;
 }
+
+//pof
 .pof{
   .slider-sec{
     background: url("../img/black-banner.png");
     position: relative;
-  }
-  .flexslider{
-    background-color: transparent;
-    border: 0;
-    .app-icons{
-      width: 30px;
-margin: 0 auto;
-text-align: center;
+    background-size: cover;
+    .application-slider{
+      .flexslider{
+        background-color: transparent;
+        border: 0;
+        .app-icons{
+          width: 30px;
+    margin: 0 auto;
+    text-align: center;
+        }
+      }
     }
   }
 }
 .pd40{
   padding: 0 40px;
 margin: 0px 60px;
+}
+.pd-41{
+  padding: 0 40px;
+}
+.application-slider{
+h2{
+      padding: 30px 0px;
+}
+}
+.gallery-holder{
+  .gal{
+    margin: 0;
+  }
 }
