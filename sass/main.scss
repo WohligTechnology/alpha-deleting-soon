@@ -176,6 +176,35 @@ footer {
     min-height: 450px;
 }
 
+.foot-color{
+  background-color: #181818;
+  p{
+    color: #fff;
+    font-size: 15px;
+    a{
+      text-decoration: none;
+      color: #fff;
+
+    }
+  }
+  li{
+    a{
+      text-decoration: none;
+
+    }
+          color: #fff;
+  }
+}
+.social-sec{
+  margin-bottom: 0;
+
+  li{
+
+    // padding: 10px;
+    display: inline-block;
+  }
+}
+
 .full-img {
     width: 100%;
     display: block;
