@@ -61,7 +61,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 })
 .controller('NewsDetailCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("news-detail"); //Use same name of .html file
-    $scope.menutitle = NavigationService.makeactive("News"); //This is the Title of the Website
+    $scope.menutitle = NavigationService.makeactive("News Detail"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 
