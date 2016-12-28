@@ -611,6 +611,44 @@ footer {
         .flex-control-nav {
             display: none;
         }
+        .flexslider:hover .flex-direction-nav .flex-prev:hover {
+            opacity: 1;
+        }
+
+        .flexslider:hover .flex-direction-nav .flex-next:hover {
+            opacity: 1;
+        }
+
+        .flex-direction-nav a.flex-next:before {
+            content: '';
+            background: url("../img/right-arrow-grey.png") no-repeat center;
+            width: 50px;
+      height: 60px;
+        }
+
+        .flex-direction-nav a.flex-prev:before {
+            content: '';
+            background: url("../img/left-arrow-grey.png") no-repeat center;
+            width: 50px;
+      height: 60px;
+        }
+
+        .flex-direction-nav a {
+          width: 50px;
+  height: 60px;
+            opacity: 1 !important;
+        }
+
+        .flex-direction-nav .flex-prev {
+            left: -86px !important;
+            opacity: 1;
+        }
+
+        .flex-direction-nav .flex-next {
+            right: -86px !important;
+            opacity: 1;
+        }
+
     }
 }
 
@@ -789,6 +827,46 @@ footer {
         .flex-control-nav {
             display: none;
         }
+        .flexslider:hover .flex-direction-nav .flex-prev:hover {
+            opacity: 1;
+        }
+
+        .flexslider:hover .flex-direction-nav .flex-next:hover {
+            opacity: 1;
+        }
+
+        .flex-direction-nav a.flex-next:before {
+            content: '';
+            background: url("../img/right-arrow.png") no-repeat center;
+            width: 50px;
+    height: 60px;
+        }
+
+        .flex-direction-nav a.flex-prev:before {
+            content: '';
+            background: url("../img/left-arrow.png") no-repeat center;
+            width: 50px;
+    height: 60px;
+        }
+
+        .flex-direction-nav a {
+          width: 50px;
+  height: 60px;
+            opacity: 1 !important;
+        }
+
+        .flex-direction-nav .flex-prev {
+            left: -130px !important;
+            opacity: 1;
+              @include transform(translateY(-50%));
+        }
+
+        .flex-direction-nav .flex-next {
+            right: -130px !important;
+            opacity: 1;
+              @include transform(translateY(-50%));
+        }
+
     }
 }
 
