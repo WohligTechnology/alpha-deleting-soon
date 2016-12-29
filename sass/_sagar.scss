@@ -1,0 +1,29 @@
+.bags-liners {
+    .policy-sec {
+        background-image: url("../img/ppe/black-bagsliners.png");
+        background-size: cover;
+        padding: 40px 80px;
+        margin-top: -30px;
+        .p-txt {
+            color: #fff;
+        }
+        .policy-head {
+            color: #e21e23;
+            font-size: 42px;
+            font-weight: bold;
+        }
+        .policy-head1 {
+            @extend .policy-head;
+            text-align: right;
+        }
+        .grid-sec {
+            .policy-icons {
+                width: 64px;
+                margin: 0 auto;
+            }
+        }
+        .border {
+            border-right: 1px solid #fff;
+        }
+    }
+}
