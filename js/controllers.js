@@ -145,6 +145,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 
+    $scope.tab = 1;
+
     $(window).load(function() {
       // The slider being synced must be initialized first
       $('#carousel').flexslider({

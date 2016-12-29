@@ -409,11 +409,14 @@ footer {
 
 .careers-sec {
     padding: 28px 18px;
-
+span{
+  font-family: sans-serif;
+}
     p {
         color: $white;
         font-size: 16px;
         letter-spacing: 0.2px;
+        text-align: justify;
     }
 
     .list-cont {
@@ -1001,6 +1004,10 @@ padding-right: 50px;
 }
 .pt30{
   padding-top: 30px;
+}
+.rang-bg{
+ background: url('/img/black-banner.png')no-repeat;
+ background-size: cover;
 }
 @import "rishub";
 @import "fancybox-override";
