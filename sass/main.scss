@@ -1,4 +1,4 @@
-@import url( 'https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Roboto');
 @import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap-sprockets";
@@ -7,7 +7,9 @@
 @import "../bower_components/fancyBox/source/jquery.fancybox.css";
 @import "../bower_components/swiper/dist/css/swiper.min.css";
 @import "../bower_components/smart-app-banner/smart-app-banner.css";
+
 /* Bootstrap Variables Goes Here */
+
 $brand-primary: #0d9dff !default;
 $brand-success: #84ce3c !default;
 $brand-warning: #ffec39 !default;
@@ -15,13 +17,20 @@ $brand-danger: #e21e23 !default;
 $brand-info: #000072 !default;
 $base: #1c1b16 !default;
 $white: #ffffff !default;
-$font-family-sans-serif: 'Josefin Sans', 'Roboto', 'REVOLUTION', Arial, sans-serif !default;
+$font-family-sans-serif: 'Josefin Sans',
+'Roboto',
+'REVOLUTION',
+Arial,
+sans-serif !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @font-face {
     font-family: "REVOLUTION";
     src: url("../fonts/REVOLUTION.ttf");
 }
+
+
 /* mixing*/
+
 @mixin placeholder {
     $placeholders: ":-webkit-input" ":-moz" "-moz" "-ms-input";
     @each $placeholder in $placeholders {
@@ -30,16 +39,19 @@ $font-family-sans-serif: 'Josefin Sans', 'Roboto', 'REVOLUTION', Arial, sans-ser
         }
     }
 }
+
 @mixin x-appearance ($value) {
     -webkit-appearance: $value;
     -moz-appearance: $value;
     appearance: $value;
 }
+
 @mixin background-size($size) {
     -webkit-background-size: $size;
     -moz-background-size: $size;
     background-size: $size;
 }
+
 @mixin transition($transition...) {
     -moz-transition: $transition;
     -o-transition: $transition;
@@ -98,18 +110,17 @@ footer {
     font-size: 12px;
     background-color: #eee;
     padding: 18px 0;
-
     p {
         margin: 0;
     }
 }
-//bootstrap forms
 
+//bootstrap forms
 .btn,
 .form-control,
-.input-group-lg > .form-control,
-.input-group-lg > .input-group-addon,
-.input-group-lg > .input-group-btn > .btn,
+.input-group-lg>.form-control,
+.input-group-lg>.input-group-addon,
+.input-group-lg>.input-group-btn>.btn,
 .input-lg {
     border-radius: 0;
     @include box-shadow(none);
@@ -131,11 +142,9 @@ footer {
 
 .form-invalid {
     color: $brand-danger;
-
     .form-control {
         border-color: $brand-danger;
         color: $brand-danger;
-
         &::-webkit-input-placeholder {
             color: $brand-danger;
         }
@@ -145,23 +154,21 @@ footer {
 .form-submission {
     min-height: 300px;
 }
-//FLEX SLIDER FIXES
 
+//FLEX SLIDER FIXES
 .flex-direction-nav {
     a {
         height: auto;
     }
-
     .flex-prev {
         left: 10px !important;
     }
-
     .flex-next {
         right: 10px !important;
     }
 }
-//SWIPER CSS
 
+//SWIPER CSS
 .swiper-button-prev,
 .swiper-container-rtl .swiper-button-next {
     background-image: url("../img/prev.png");
@@ -171,25 +178,25 @@ footer {
 .swiper-container-rtl .swiper-button-prev {
     background-image: url("../img/next.png");
 }
+
+
 /* Start writing sass here */
+
 .content {
     min-height: 450px;
 }
 
 .foot-color {
     background-color: #181818;
-
     p {
         color: #fff;
         font-size: 18px;
         padding-top: 10px;
-
         a {
             text-decoration: none;
             color: #fff;
         }
     }
-
     li {
         a {
             text-decoration: none;
@@ -200,7 +207,6 @@ footer {
 
 .social-sec {
     margin-bottom: 0;
-
     li {
         // padding: 10px;
         display: inline-block;
@@ -236,7 +242,6 @@ footer {
     ul {
         display: block;
         list-style: none;
-
         li {
             display: inline-block;
         }
@@ -270,8 +275,8 @@ footer {
 .banner {
     position: relative;
 }
-///about us
 
+///about us
 .text-head {
     letter-spacing: 0.2px;
 }
@@ -280,15 +285,12 @@ footer {
     .black-sec {
         margin: 60px;
     }
-
     .black-holder {
         position: relative;
     }
-
     .pdt-40 {
         padding: 40px 0;
     }
-
     .vis-mis {
         background: url("../img/black-banner.png");
         position: relative;
@@ -296,7 +298,6 @@ footer {
         margin: 40px;
         background-size: cover;
         color: $white;
-
         p {
             font-size: 16px;
             letter-spacing: 0.2px;
@@ -308,12 +309,10 @@ footer {
             // font-weight: bold;
         }
     }
-
     .content-sec {
         h2 {
             // font-weight: bold;
         }
-
         p {
             font-size: 16px;
             lette40pxr-spacing: 0.2px;
@@ -347,8 +346,8 @@ footer {
     z-index: 1;
     width: 140px;
 }
-////careers
 
+////careers
 .display-none {
     display: none!important;
 }
@@ -361,19 +360,16 @@ footer {
         font-weight: 700;
         font-size: 16px;
     }
-
     input {
         @include placeholder {
             color: #ccc;
         }
     }
     padding-top: 5%;
-
     input {
         border: 0;
         border-bottom: 1px solid #ccc;
     }
-
     .submit-sec {
         margin-top: 4%;
         margin-bottom: 10%;
@@ -382,13 +378,11 @@ footer {
 
 .upload-btn {
     padding-left: 10px;
-
     span {
         float: left;
         line-height: 2;
         color: #ccc;
     }
-
     .upl-label {
         border: 1px solid $brand-danger;
         color: $brand-danger;
@@ -397,7 +391,6 @@ footer {
     }
     border: 0;
     border-bottom: 1px solid #ccc;
-
     .input {
         display: none;
     }
@@ -409,26 +402,24 @@ footer {
 
 .careers-sec {
     padding: 28px 18px;
-span{
-  font-family: sans-serif;
-}
+    span {
+        font-family: sans-serif;
+    }
     p {
         color: $white;
         font-size: 16px;
         letter-spacing: 0.2px;
         text-align: justify;
     }
-
     .list-cont {
         color: #fff;
-
         h3 {
             text-transform: uppercase;
         }
     }
 }
 
-.nav > li > a {
+.nav>li>a {
     position: relative;
     display: block;
     padding: 10px 15px;
@@ -457,7 +448,6 @@ span{
     .flexslider {
         margin: 0;
         border: 0;
-
         .slides {
             img {
                 height: auto;
@@ -465,7 +455,6 @@ span{
                 width: auto;
             }
         }
-
         .flex-control-nav {
             display: none;
         }
@@ -476,25 +465,20 @@ span{
     background: url("/img/bg-texture.jpg") no-repeat;
     background-size: cover;
     overflow: hidden;
-
     ul {
         margin: 0;
-
         li {
             padding: 15px 40px;
             position: relative;
-
             a {
                 text-decoration: none;
                 color: #fff;
                 font-size: 18px;
             }
-
             &:active,
             &:hover {
                 position: relative;
                 background: #ff0000;
-
                 &:before {
                     background: #ff0000;
                     content: "";
@@ -506,7 +490,6 @@ span{
                     top: 1px;
                     left: -10px;
                 }
-
                 &:after {
                     background: #ff0000;
                     content: "";
@@ -536,27 +519,24 @@ span{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
 
 .bg-red {
     ul {
         padding: 0;
-
         li {
             padding: 0 40px;
             line-height: 20%;
             border-right: 1px solid $base;
         }
     }
-
     .count-box {
         strong {
             text-transform: uppercase;
             font-size: 18px;
             font-weight: 700;
         }
-
         h4 {
             font-size: 49px;
             font-weight: 700;
@@ -591,63 +571,52 @@ span{
     .flexslider {
         background: rgba(255, 255, 255, 0);
         border: 0 solid #fff;
-
         .slides {
             zoom: 1;
             position: relative;
-
             li {
                 background: #fff;
                 padding: 16px;
                 position: relative;
                 height: 200px;
-
                 .cl-box {
                     position: absolute;
                     top: 50%;
                     left: 50%;
-                    transform: translate(-50%,-50%);
+                    transform: translate(-50%, -50%);
                 }
             }
         }
-
         .flex-control-nav {
             display: none;
         }
-
         .flexslider:hover .flex-direction-nav .flex-prev:hover {
             opacity: 1;
         }
-
         .flexslider:hover .flex-direction-nav .flex-next:hover {
             opacity: 1;
         }
-
         .flex-direction-nav a.flex-next:before {
             content: '';
             background: url("../img/right-arrow-grey.png") no-repeat center;
             width: 50px;
             height: 60px;
         }
-
         .flex-direction-nav a.flex-prev:before {
             content: '';
             background: url("../img/left-arrow-grey.png") no-repeat center;
             width: 50px;
             height: 60px;
         }
-
         .flex-direction-nav a {
             width: 50px;
             height: 60px;
             opacity: 1 !important;
         }
-
         .flex-direction-nav .flex-prev {
             left: -86px !important;
             opacity: 1;
         }
-
         .flex-direction-nav .flex-next {
             right: -86px !important;
             opacity: 1;
@@ -660,7 +629,6 @@ span{
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     background: white;
     margin: 0 -16px 0 0;
-
     a {
         vertical-align: -webkit-baseline-middle;
     }
@@ -677,11 +645,9 @@ span{
     @extend .up-arrow;
     -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
     clip-path: polygon(50% 100%, 0 0, 100% 0);
-
     a {
         vertical-align: super;
     }
-
     i {
         padding: 5px 23px 16px;
     }
@@ -708,7 +674,6 @@ span{
     font-size: 20px;
     padding: 7px 26px;
     position: relative;
-
     &:after {
         background: $brand-danger;
         content: "";
@@ -720,7 +685,6 @@ span{
         top: 3px;
         left: -5px;
     }
-
     &:before {
         background: $brand-danger;
         content: "";
@@ -732,11 +696,9 @@ span{
         top: -5px;
         right: -5px;
     }
-
     &:focus {
         outline: 0;
     }
-
     &:active {
         &:focus {
             outline: 0;
@@ -748,7 +710,6 @@ span{
     text-align: center;
     margin: 0 auto;
     padding-top: 50px;
-
     img {
         width: 100%;
     }
@@ -756,18 +717,15 @@ span{
 
 .j2 {
     position: relative;
-
     .jr2-text {
         width: 130px;
         position: absolute;
         left: 0;
         top: 66px;
     }
-
     .jr2-img {
         position: absolute;
         right: 0;
-
         img {
             width: 255px;
         }
@@ -776,17 +734,14 @@ span{
 
 .j3 {
     @extend .j2;
-
     .jr3-text {
         width: 105px;
         top: 0;
     }
-
     .jr3-img {
         position: absolute;
         right: 0;
         top: 36px;
-
         img {
             width: 255px;
         }
@@ -826,45 +781,37 @@ span{
         margin: 0;
         background: rgba(255, 255, 255, 0);
         border: 0 solid #fff;
-
         .flex-control-nav {
             display: none;
         }
-
         .flexslider:hover .flex-direction-nav .flex-prev:hover {
             opacity: 1;
         }
-
         .flexslider:hover .flex-direction-nav .flex-next:hover {
             opacity: 1;
         }
-
         .flex-direction-nav a.flex-next:before {
             content: '';
             background: url("../img/right-arrow.png") no-repeat center;
             width: 50px;
             height: 60px;
         }
-
         .flex-direction-nav a.flex-prev:before {
             content: '';
             background: url("../img/left-arrow.png") no-repeat center;
             width: 50px;
             height: 60px;
         }
-
         .flex-direction-nav a {
             width: 50px;
             height: 60px;
             opacity: 1 !important;
         }
-
         .flex-direction-nav .flex-prev {
             left: -130px !important;
             opacity: 1;
             @include transform(translateY(-50%));
         }
-
         .flex-direction-nav .flex-next {
             right: -130px !important;
             opacity: 1;
@@ -875,7 +822,6 @@ span{
 
 .nw-title {
     min-height: 40px;
-
     p {
         font-weight: 700;
         font-size: 18px;
@@ -896,7 +842,6 @@ span{
 .ribbon-red {
     position: absolute;
     top: -20px;
-
     img {
         width: 167px;
     }
@@ -945,7 +890,6 @@ span{
 
 .qual {
     font-family: 'roboto';
-
     p,
     span {
         font-size: 16px;
@@ -956,7 +900,7 @@ span{
     li {
         list-style: none;
         font-size: 16px;
-      &:before {
+        &:before {
             content: "•";
             color: $brand-danger;
             font-size: 21px;
@@ -965,50 +909,62 @@ span{
         }
     }
 }
-.ql-box{
-  span{
-    font-family: 'roboto';
-    font-size: 16px;
-    text-align: center;
-  }
+
+.ql-box {
+    span {
+        font-family: 'roboto';
+        font-size: 16px;
+        text-align: center;
+    }
 }
-.ach-bg{
-  background: url('/img/black-banner.png')no-repeat;
-  background-size: cover;
-      padding: 20px 0px 30px 0px;
+
+.ach-bg {
+    background: url('/img/black-banner.png')no-repeat;
+    background-size: cover;
+    padding: 20px 0px 30px 0px;
 }
-.pad-box{
-        margin: 64px 0px 100px 0px;
+
+.pad-box {
+    margin: 64px 0px 100px 0px;
 }
-.ach-sec{
-  p{
-    font-family: 'roboto';
-    font-size: 16px;
-    color: $white;
-  }
+
+.ach-sec {
+    p {
+        font-family: 'roboto';
+        font-size: 16px;
+        color: $white;
+    }
 }
+
 .desc-p {
     padding-top: 15px;
     width: 200px;
     margin: 0 auto;
 }
+
 .img-hgt {
     min-height: 90px;
 }
-.mt-30{
-      margin-top: 30px;
+
+.mt-30 {
+    margin-top: 30px;
 }
-.pad-l-r{
-  padding-left: 50px;
-padding-right: 50px;
+
+.pad-l-r {
+    padding-left: 50px;
+    padding-right: 50px;
 }
-.pt30{
-  padding-top: 30px;
+
+.pt30 {
+    padding-top: 30px;
 }
-.rang-bg{
- background: url('/img/black-banner.png')no-repeat;
- background-size: cover;
+
+.rang-bg {
+    background: url('/img/black-banner.png')no-repeat;
+    background-size: cover;
 }
+
+@import "sagar";
 @import "rishub";
 @import "fancybox-override";
 @import "mobile";
