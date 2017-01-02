@@ -17,12 +17,13 @@
   }
   .event-info{
     background: url("../img/black-banner.png");
-    padding-bottom: 500px;
-margin-bottom: -500px;
+    padding-bottom: 50px;
+    margin-bottom: -50px;
 // background-size: cover;
   .text-sec{
-      // padding: 50px 30px;
-          padding: 72px 30px;
+  padding: 40px 30px;
+  padding-top: 55px;
+
     }
     h3{
       margin-top: 0;
@@ -78,6 +79,7 @@ display: inline-block;
   .content-sec{
         padding-top: 40px;
         .category-selection{
+          padding: 0 20px;
           margin: 10px;
           display: inline-block;
                   padding-bottom: 40px;
@@ -165,7 +167,7 @@ line-height: 18px;
     }
     span{
       color: $white;
-      font-size: 18px;
+      font-size: 20px;
       padding: 5px;
     }
     .pdf-1{
@@ -365,6 +367,7 @@ font-size: 15px;
           color: #fff;
 margin-top: 5px;
 font-size: 15px;
+font-weight: 600;
         }
       }
       .flexslider{
@@ -534,6 +537,7 @@ font-size: 15px;
   }
 }
 .also-sec{
+  padding-bottom: 20px;
 h3{
   position: absolute;
   top: 50%;
@@ -550,4 +554,20 @@ h3{
 }
 .bags-liners{
   position: relative;
+}
+.pl-location{
+  h4{
+    margin-top: 0;
+  }
+}
+.mgt-14{
+  margin-top: -14px;
+}
+.plant-loc{
+  // .black-sec{
+  //   height: 100%;
+  //   padding-bottom: 95px;
+  //   margin-bottom: -95px;
+  //   overflow: hidden;
+  // }
 }

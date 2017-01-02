@@ -187,6 +187,7 @@ footer {
 }
 
 .foot-color {
+  position: relative;
     background-color: #181818;
     p {
         color: #fff;
@@ -324,10 +325,12 @@ footer {
 .banner-rib {
     position: absolute;
     top: 0;
-    width: 180px;
+    width: 189px;
     right: 0;
 }
-
+.ban-full{
+  width: 100%;
+}
 .black-sec {
     position: relative;
 }

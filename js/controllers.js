@@ -200,31 +200,31 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.navigation = NavigationService.getnav();
 
     $scope.flexapplication = [{
-         image: "img/pof/pills.png",
+         image: "img/pof/1.png",
          desc: "Pharmaceutical",
      },
      {
-       image: "img/pof/pills.png",
+       image: "img/pof/2.png",
        desc: "Pharmaceutical",
       },
       {
-        image: "img/pof/pills.png",
+        image: "img/pof/3.png",
         desc: "Pharmaceutical",
        },
        {
-         image: "img/pof/pills.png",
+         image: "img/pof/4.png",
          desc: "Pharmaceutical",
         },
         {
-          image: "img/pof/pills.png",
+          image: "img/pof/5.png",
           desc: "Pharmaceutical",
          },
         {
-          image: "img/pof/pills.png",
+          image: "img/pof/6.png",
           desc: "Pharmaceutical",
          },
         {
-          image: "img/pof/pills.png",
+          image: "img/pof/7.png",
           desc: "Pharmaceutical",
          },
         {
