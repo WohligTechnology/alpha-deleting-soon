@@ -339,12 +339,13 @@
         position: absolute;
         transform: rotate(-90deg);
         top: 35%;
-        right: -50px;
+          right: -70px;
         border-radius: 4px;
         background-color: transparent;
         color: $brand-danger;
         border: 1px solid;
         border-bottom: none;
+        font-size: 20px;
     }
 }
 
@@ -772,7 +773,9 @@
     margin-top: 35px;
 }
 
-
+.col-black{
+  color: #000;
+}
 //quality-policy
 .ql-box{
   img{
