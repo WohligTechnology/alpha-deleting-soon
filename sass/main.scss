@@ -374,14 +374,14 @@ padding-bottom: 7px;
 
     input {
         @include placeholder {
-            color: #ccc;
+            color: grey;
         }
     }
     padding-top: 5%;
 
     input {
         border: 0;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid grey;
     }
 
     .submit-sec {
@@ -400,7 +400,7 @@ padding-bottom: 7px;
     span {
         float: left;
         line-height: 2;
-        color: #ccc;
+        color: grey;
     }
 
     .upl-label {
@@ -410,7 +410,7 @@ padding-bottom: 7px;
         cursor: pointer;
     }
     border: 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid grey;
 
     .input {
         display: none;
