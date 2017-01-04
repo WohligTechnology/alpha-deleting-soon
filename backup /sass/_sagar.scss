@@ -1,0 +1,55 @@
+.bags-liners {
+.list-cont{
+  ul{
+    padding-left: 0;
+  }
+  h3{
+    font-weight: 600;
+  }
+}
+
+  li{
+    font-size: 16px;
+font-weight: 600;
+line-height: 2;
+  }
+    .policy-sec {
+        background-image: url("../img/ppe/black-bagsliners.png");
+        background-size: cover;
+        padding: 40px 80px;
+        margin-top: -30px;
+        .p-txt {
+            color: #d1d1d1;
+            font-weight: 600;
+    letter-spacing: 0.4px;
+    margin-top: 10px;
+    font-size: 15px;
+        }
+        .policy-head {
+            color: $brand-danger;
+            font-size: 42px;
+      font-family: revolution;
+                letter-spacing: 1px;
+        }
+        .policy-head1 {
+            @extend .policy-head;
+            text-align: right;
+        }
+        .grid-sec {
+margin-top: 10px;
+            .policy-icons {
+                // width: 64px;
+                margin: 0 auto;
+            }
+        }
+        .border {
+            border-right: 1px solid #fff;
+        }
+    }
+     .list-alignment{
+       li{
+         float: right;
+         clear: right;
+       }
+     }
+}
