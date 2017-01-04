@@ -23,7 +23,8 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 "img":"img/n1.jpg",
 "date":"September 2013",
 "title":"Meet Alpha’s Plastic Super Family in Mexico!"
-},{
+},
+{
 "img":"img/n2.jpg",
 "date":"November 2013",
 "title":"A major stride for Alpha at the Expo Pack Mexico"

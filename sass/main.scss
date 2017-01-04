@@ -302,6 +302,11 @@ footer {
             font-size: 16px;
             letter-spacing: 0.2px;
             line-height: 22px;
+font-family: Roboto;
+padding-bottom: 7px;
+        }
+        p:last-child{
+          padding-bottom: 0;
         }
         // margin-top: 30px;
         .vis-head {
@@ -317,8 +322,9 @@ footer {
 
         p {
             font-size: 16px;
-            lette40pxr-spacing: 0.2px;
+            letter-spacing: 0.3px;
             text-align: justify;
+              font-family: Roboto;
         }
     }
 }
@@ -358,6 +364,12 @@ footer {
 }
 
 .form-sec {
+  form{
+    @include placeholder {
+    
+    }
+  }
+
     .sub-btn {
         border: 1px solid #e21e23;
         color: #e21e23;
@@ -427,6 +439,7 @@ footer {
         font-size: 16px;
         letter-spacing: 0.2px;
         text-align: justify;
+font-family: Roboto;
     }
 
     .list-cont {
@@ -831,13 +844,21 @@ footer {
 .mt-50 {
     margin-top: 50px;
 }
-
+.nw-box{
+  .date-sec{
+    color: $white;
+        padding: 6px 16px 5px 24px;
+        font-weight: 600;
+            letter-spacing: 0.3px;
+  }
+}
 .nw-slider {
+  padding: 0 30px;
     .flexslider {
         margin: 0;
         background: rgba(255, 255, 255, 0);
         border: 0 solid #fff;
-    
+
 
         .flex-control-nav {
             display: none;
@@ -872,13 +893,13 @@ footer {
         }
 
         .flex-direction-nav .flex-prev {
-            left: -130px !important;
+            left: -60px !important;
             opacity: 1;
             @include transform(translateY(-50%));
         }
 
         .flex-direction-nav .flex-next {
-            right: -130px !important;
+            right: -60px !important;
             opacity: 1;
             @include transform(translateY(-50%));
         }
@@ -889,6 +910,7 @@ footer {
     min-height: 40px;
 
     p {
+      padding-top: 8px;
         font-weight: 700;
         font-size: 18px;
     }
@@ -1040,5 +1062,5 @@ footer {
 }
 @import "sagar";
 @import "rishub";
-@import "fancybox-override";
+// @import "fancybox-override";
 @import "mobile";
