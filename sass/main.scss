@@ -1069,12 +1069,12 @@ font-family: Roboto;
 /** timeline box structure **/
 .timeline {
   list-style: none;
-  padding: 20px 0 20px;
+    padding: 55px 0 20px;
   position: relative;
 }
 
 .timeline:before {
-  top: 21px;
+  top: 60px;
   bottom: 0;
   position: absolute;
   content: " ";
@@ -1298,6 +1298,7 @@ font-family: Roboto;
 .bg-journey{
   background: url('../img/journey.jpg')no-repeat;
   background-size: cover;
+  padding-top: 60px;
 }
 .page-header {
     border-bottom: 0px solid #eeeeee;
