@@ -480,7 +480,7 @@ font-family: Roboto;
             img {
                 height: auto;
                 -moz-user-select: none;
-                width: auto;
+                // width: auto;
             }
         }
 
@@ -488,7 +488,7 @@ font-family: Roboto;
             display: none;
         }
     }
-}
+} 
 
 .slider-nav {
     background: url("../img/bg-texture.jpg") no-repeat;
