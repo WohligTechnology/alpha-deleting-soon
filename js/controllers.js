@@ -88,6 +88,47 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 
+    $scope.newsdetail=[{
+img:"",
+title:"Meet Alpha’s Plastic Super Family in Mexico! ",
+date:"",
+desc:"The packaging industry as a whole is very boring. Because it is predominantly in the B2B sector, the scope for experimenting is less. Majority of the companies have named their products based on their scientific qualities, which makes them difficult to remember. Only people from within the industry get the hang of it over a period of time.",
+desc2:"But, ALPHA has always believed in ‘Adding Value’ to their customers and the society at large. Why does this industry necessarily have to be boring? Why follow the same uninteresting naming convention? We decided to break the routine and do something interesting. Products will stimulate more curiosity if we add a face to them instead of giving them names based on their scientific properties. In order to differentiate Alpha from the rest, we created the Plastic Super Family, which is more relatable and spot- on entertaining. Each of the products have few distinct super powers, by which we mean the properties of Plastic, that represents a particular superhero and together they form the Plastic Super Family. PSF has 4 members - a father, Mother, teenage son and an elder daughter.",
+desc3:"The father, Mr. Protecto represents Safe & Secure shrink film that secures the content inside the packaging from dust and moisture. He provides security. Similarly, the mother of PSF is the face of our Stretch Films. With her ability to stretch, she safeguards good from damage during transportation. Pet bottles & jars are represented by Petty, the feather light daughter and the collation shrink film is characterized by Tuff, whose strength is his USP and his cape portrays its ability to get printed for branding.",
+desc4:"We are very excited to present our Plastic Super Family at the Pack Expo 2016 in Mexico. They are fun, entertaining and definitely the forerunners in their categories."
+
+    },{
+img:"",
+title:"A major stride for Alpha at the Expo Pack Mexico ",
+date:"May 17-20 2016",
+desc:"Alpha Plastomers is participating in Expo Pack – A 4-day event being held in Santa Fe in Mexico City, Mexico from 17th to 20th May, 2016. International exhibitors in the packaging industry will present the latest machinery, materials, components, containers, proven solutions for the processing, packaging, storage and distribution of products. Participating companies offer possibilities of new business opportunities, which being the main objective of the event. Alpha wishes to increase its presence globally and carve its name on the global map of the packaging industry. It will be an ideal platform for Alpha to showcase its products and distinguish them from its competitors.",
+desc2:"Alpha Plastomers is a family-owned packaging solutions provider with over 25 years of experience. In 1996, Alpha Polymer (the name then) was offering not only PPTQ, but also Polyethylene (PE) bags and liners to for industries including, but not limited to, textile, stationary, and household goods. By 2004, Alpha Group processed about 2,000 MT of polymers every month, which made it the largest PPTQ converter in Asia. The Indian packaging sector is ever-evolving and with Alpha’s leading position in the market in every sector, in 2006, Polyolefin (POF) Shrink Film and PET preforms were added to its portfolio. Alpha Group has become one of India’s top packaging solution provider for primary and secondary packaging industry with capacity of over seven million preforms per day and over 3,500 MT of POF shrink film annually. This tremendous growth allowed Alpha Group to diversify and add PET bottles to its portfolio for rigid packaging. Alpha Group is the only Indian company that provides solution for flexible and rigid packaging.",
+desc3:"The Expo Pack Mexico will play abode to some of the world renowned players in the packaging industry around for a period of 4 days. The exhibition will be spread over total floor space of 204,500 sq. ft. and is expected to have over 25,000 visitors with 1,000 exhibitors. It’s going to be an exciting time for Alpha and the packaging industry as a whole!"
+
+
+    },{
+img:"",
+title:"Alpha Pharma Roorkee commissions ASB Nissei 12M machine",
+date:"February 2016",
+desc:"Alpha cements its presence in Rigid packaging industry by adding ASB Nissei 12M to allow greater flexibility in its product offerings. With the new addition, Alpha has taken its first step in what will be a steady increase in capacity to tailor to pharmaceutical and FMCG industries."
+    },{
+img:"",
+title:"First Annual Meet",
+date:"November 9-10, 2015",
+desc:"Alpha Plastomers held its first annual meet right before Diwali. During the two days, everything from cost control to business strategies were discussed."
+    },{
+img:"",
+title:"Alpha enters North American market",
+date:"October 2015",
+desc:"Alpha is delighted to announce its presence in USA. A very relieved Akshay Agarwal, Director of Alpha Plastomers, said “After months of back-and-forth negotiations, we were able to come to an agreement with our USA counterparts allowing us to move closer to our customers and allowing our customers to reduce inventory and transit days."
+    },{
+img:"",
+title:"Alpha commissions Rajoo 3-Layer Multifold line",
+date:"October 2015",
+desc:"Over past 27 years, Alpha has shown it is not afraid to add new products to its portfolio to keep itself one of leading packaging suppliers in India. With the addition of 3-layer blown film line, Alpha has moved the goal post yet again and is perfectly poised to become a true “global corporation” With Rajoo’s 3-Layer Multifold line, Alpha will be adding Collation shrink film (also known as LD shrink film), stretch film, and “milk pouch” film.",
+desc2:"Please contact your sales representative to learn more about Alpha’s new product offerings."
+    }]
+
 })
 .controller('EventsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("events"); //Use same name of .html file
