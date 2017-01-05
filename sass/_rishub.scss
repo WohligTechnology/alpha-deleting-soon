@@ -250,9 +250,11 @@
 
 .rad-sec {
     letter-spacing: 3.3px;
-input{
-  top: -3px;
-}
+
+    input {
+        top: -3px;
+    }
+
     label {
         font-weight: 600;
     }
@@ -342,7 +344,7 @@ input{
         position: absolute;
         transform: rotate(-90deg);
         top: 35%;
-          right: -70px;
+        right: -70px;
         border-radius: 4px;
         background-color: transparent;
         color: $brand-danger;
@@ -413,9 +415,10 @@ input{
 }
 
 .pof {
-  .pdl20{
-    padding-left: 20px;
-  }
+    .pdl20 {
+        padding-left: 20px;
+    }
+
     .pdb20 {
         padding-bottom: 20px;
         margin-top: -45px;
@@ -541,7 +544,6 @@ input{
 
     .gal {
         margin: 0;
-
     }
 
     .gal {
@@ -617,54 +619,45 @@ input{
 }
 
 .speciality-film {
-  .careers-sec{
-    p{
-      margin-top: -15px;
-
-    }
-  }
-  .products-sec{
-        padding: 30px 0 50px;
-  }
-    .petslider {
-      .gal{
-
-      }
-      .select-sec{
-        .active{
-            h2{
-              border-bottom: 3px solid $brand-danger;
-            }
-
+    .careers-sec {
+        p {
+            margin-top: -15px;
         }
-      }
+    }
+
+    .products-sec {
+        padding: 30px 0 50px;
+    }
+
+    .petslider {
+        .gal {}
+
+.select-sec{
+  margin-bottom: 10px;
+  .active{
+    border-bottom: 3px solid $brand-danger;
+  }
+}
         button {
-            h2 {
-                border-bottom: 3px solid transparent;
-            }
             background-color: transparent;
             border: 0;
             box-shadow: none;
             padding: 0 30px;
-
-            &:focus,
-            &:hover {
-                outline: none;
-                border: none;
-                background-color: transparent;
+            color: $brand-danger;
+            border-bottom: 3px solid transparent;
+            &:active,&:focus:hover{
+              color: $brand-danger;
             }
+&:active,&:focus,&:hover{
+  border-bottom: 3px solid $brand-danger;
+  outline: none;
+  background-color: transparent;
+  color: $brand-danger;
+}
 
             &:last-child {
                 border-left: 2px solid #000;
                 margin-left: -4px;
-            }
-
-            &:active,
-            &:focus,
-            &:hover {
-                h2 {
-                    border-bottom: 3px solid $brand-danger;
-                }
             }
         }
     }
@@ -732,6 +725,7 @@ input{
     }
 }
 //footer
+
 .foot-triangle {
     width: 0;
     position: relative;
@@ -787,54 +781,61 @@ input{
     margin-top: 35px;
 }
 
-.col-black{
-  color: #000;
+.col-black {
+    color: #000;
 }
 //quality-policy
-.ql-box{
-  img{
-    width: 200px;
-  }
-  }
-  .ach-sec{
+
+.ql-box {
+    img {
+        width: 200px;
+    }
+}
+
+.ach-sec {
     .img-hgt {
-    min-height: 104px;
+        min-height: 104px;
+    }
 }
-  }
 
+.al-relative {
+    .ach-sec {
+        position: relative;
+    }
 
-.al-relative{
-  .ach-sec{
-    position: relative;
-  }
-  .img-set{
-    position: absolute;
-top: 22px;
-left: 50%;
-transform: translate(-50%);
-  }
+    .img-set {
+        position: absolute;
+        top: 22px;
+        left: 50%;
+        transform: translate(-50%);
+    }
 }
-.cl-box{
-  img{
-    width: 190px!important;
-  }
+
+.cl-box {
+    img {
+        width: 190px!important;
+    }
 }
-.slider2{
-  .flexslider {
-    margin: -28px 0 0px 0px
-  }
+
+.slider2 {
+    .flexslider {
+        margin: -28px 0 0;
+    }
 }
-.slider1{
-  .flexslider {
-    margin: 0px 0 0px 0px;
-  }
+
+.slider1 {
+    .flexslider {
+        margin: 0;
+    }
 }
-.red-back{
-  background-color: $brand-danger;
-  .foot-triangle,.foot-triangle1
-  {
-    span i{
-      color: $brand-danger;
-    }  
-  }
+
+.red-back {
+    background-color: $brand-danger;
+
+    .foot-triangle,
+    .foot-triangle1 {
+        span i {
+            color: $brand-danger;
+        }
+    }
 }
