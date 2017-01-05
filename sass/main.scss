@@ -1007,7 +1007,7 @@ font-family: Roboto;
 .ach-bg {
     background: url('../img/black-banner.png')no-repeat;
     background-size: cover;
-    padding: 20px 0 30px;
+    padding: 20px 50px 30px;
 }
 
 .pad-box {
@@ -1147,33 +1147,38 @@ font-family: Roboto;
       width: 38%;
       float: left;
       position: relative;
-      &:before{
-        position: absolute;
-        top: 50%;
-        display: inline-block;
-        border-top: 1px solid red;
-        content: " ";
-        left: -137px !important;
-        width: 138px;
-      }
+
     }
     .timeline-panel2{
       width: 38%;
       float: left;
       position: relative;
-      &:before{
-        position: absolute;
-        top: 50%;
-        display: inline-block;
-        border-top: 1px solid red;
-        content: " ";
-        right: -137px !important;
-        width: 138px;
-      }
+
     }
   }
 }
-
+.line-left{
+  &:before{
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    border-top: 1px solid red;
+    content: " ";
+    right: -137px !important;
+    width: 138px;
+  }
+}
+.line-right{
+  &:before{
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    border-top: 1px solid red;
+    content: " ";
+    left: -137px !important;
+    width: 138px;
+  }
+}
 .timeline li .timeline-panel:after {
   position: absolute;
   top: 27px;
@@ -1248,14 +1253,7 @@ font-family: Roboto;
 }
 
 /** media queries **/
-@media (max-width: 991px) {
-  .timeline li .timeline-panel {
-    width: 44%;
-  }
-}
-
 @media (max-width: 700px) {
-  .page-header h1 { font-size: 1.8em; }
 
   ul.timeline:before {
     left: 40px;
@@ -1270,10 +1268,9 @@ font-family: Roboto;
   }
 
   ul.timeline li .tl-circ {
-    top: 22px;
-    left: 22px;
-    margin-left: 0;
-
+      top: 49%;
+      left: 36px;
+      margin-left: 0;
   }
   ul.timeline > li > .tldate {
     margin: 0;
@@ -1304,6 +1301,16 @@ font-family: Roboto;
 .page-header {
     border-bottom: 0px solid #eeeeee;
 }
+.tl-data {
+    position: absolute;
+    top: 50%;
+    transform: translatey(-50%);
+    /* width: 100%; */
+}
+.journey-sec {
+    display: flex;
+}
+
 .tl-data{
   p{
     font-size: 18px;
@@ -1312,6 +1319,11 @@ font-family: Roboto;
 .tl-img {
     padding: 8px;
     border: 1px solid #fd131b;
+}
+.text-right{
+  p{
+    text-align: right;
+  }
 }
 @import "sagar";
 @import "rishub";

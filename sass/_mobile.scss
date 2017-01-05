@@ -1,31 +1,4 @@
-@media (max-width: $screen-xs-max) {
-  .about-us{
-    .black-sec {
-      margin: 0;
-  }
-.pdt-40 {
-    padding: 0 0 10px;
-}
-.abt-img1{
-  padding-bottom: 15px;
-}
-  .vis-mis{
-    margin: 20px;
-    padding: 0;
-    p{
-      text-align: justify;
-    }
-  }
-  }
-  .events{
-    .content-sec p{
-      text-align: justify;
-    }
-   .event-info .text-sec {
-    padding: 30px 30px;
-  }
-}
-}
+
 .news{
   .content-sec{
     padding-top: 10px;
@@ -67,7 +40,100 @@
       margin: 0;
     }
   }
-}
-@media (max-width: $screen-sm-max) {}
 
+}
+@media (max-width: $screen-sm-max) {
+  .timeline li .timeline-panel {
+    width: 44%;
+  }
+  .tl-data {
+    position: inherit;
+    top: inherit;
+    transform: inherit;
+    /* width: 100%; */
+}
+.tl-data p {
+    font-size: 14px;
+}
+.line-right:before {
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    border-top: 1px solid red;
+    content: " ";
+    left: -44px !important;
+    width: 44px;
+}
+.timeline li .tl-circ {
+        top: 48%;
+}
+.bg-journey {
+    padding-top: 70px;
+}
+.page-header h1 {
+    font-size: 3.26em;
+}
+.line-left:before {
+    right: -44px !important;
+    width: 45px;
+}
+.tldate {
+    width: 86px;
+    font-size: 18px;
+}
+.tl-img img {
+    width: 100%;
+}
+}
+@media (max-width: $screen-xs-max) {
+  .tldate:before {
+display: none;
+}
+.tldate:after {
+display: none;
+}
+  .journey-sec {
+    display: block;
+}
+.page-header h1 {
+    font-size: 2.26em;
+}
+.line-right:before {
+    left: -50px !important;
+    width: 50px;
+}
+.text-right p {
+    text-align: left;
+}
+  .about-us{
+    .black-sec {
+      margin: 0;
+  }
+.pdt-40 {
+    padding: 0 0 10px;
+}
+.abt-img1{
+  padding-bottom: 15px;
+}
+  .vis-mis{
+    margin: 20px;
+    padding: 0;
+    p{
+      text-align: justify;
+    }
+  }
+  }
+  .events{
+    .content-sec p{
+      text-align: justify;
+    }
+   .event-info .text-sec {
+    padding: 30px 30px;
+  }
+}
+.line-left:before {
+    left: -54px !important;
+    width: 55px;
+}
+}
 @media (max-width: $screen-md-max) {}
