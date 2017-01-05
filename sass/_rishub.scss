@@ -12,6 +12,7 @@
         p {
             font-size: 16px;
             letter-spacing: 0.2px;
+            font-family: Roboto;
         }
     }
 
@@ -623,9 +624,17 @@
         padding: 30px 0 50px;
   }
     .petslider {
+      .select-sec{
+        .active{
+            h2{
+              border-bottom: 3px solid $brand-danger !important;
+            }
+
+        }
+      }
         button {
             h2 {
-                border-bottom: 2px solid transparent;
+                border-bottom: 3px solid transparent;
             }
             background-color: transparent;
             border: 0;
@@ -637,7 +646,6 @@
                 outline: none;
                 border: none;
                 background-color: transparent;
-                // border-bottom: 2px solid $brand-danger;
             }
 
             &:last-child {
