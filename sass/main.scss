@@ -377,7 +377,7 @@ padding-bottom: 7px;
             color: grey;
         }
     }
-    padding-top: 5%;
+    padding-top: 20px;
 
     input {
         border: 0;
@@ -488,7 +488,7 @@ font-family: Roboto;
             display: none;
         }
     }
-} 
+}
 
 .slider-nav {
     background: url("../img/bg-texture.jpg") no-repeat;
@@ -978,6 +978,7 @@ font-family: Roboto;
     p,
     span {
         font-size: 16px;
+        font-weight: 700;
     }
 }
 

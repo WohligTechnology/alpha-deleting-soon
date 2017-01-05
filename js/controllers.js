@@ -5,19 +5,41 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Home"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+    TemplateService.footer="views/footer2.html"
 
     $scope.mySlides = [
         'img/banner.jpg',
         'img/banner.jpg'
     ];
     $scope.client = [
-     'img/client/c1.jpg',
-     'img/client/c2.jpg',
-     'img/client/c3.jpg',
-     'img/client/c4.jpg',
-     'img/client/c5.jpg',
-     'img/client/c6.jpg'
- ];
+     'img/client/1.jpg',
+     'img/client/2.jpg',
+     'img/client/3.jpg',
+     'img/client/4.jpg',
+     'img/client/5.jpg',
+     'img/client/6.jpg',
+     'img/client/7.jpg',
+     'img/client/8.jpg',
+     'img/client/9.jpg',
+     'img/client/10.jpg',
+     'img/client/11.jpg',
+     'img/client/12.jpg',
+     'img/client/13.jpg',
+     'img/client/14.jpg',
+     'img/client/15.jpg',
+     'img/client/16.jpg',
+     'img/client/17.jpg',
+     'img/client/18.jpg',
+     'img/client/19.jpg',
+     'img/client/20.jpg',
+     'img/client/21.jpg',
+     'img/client/22.jpg',
+     'img/client/23.jpg',
+     'img/client/24.jpg',
+     'img/client/25.jpg',
+     'img/client/26.jpg',
+     'img/client/27.jpg'
+];
  $scope.news = [
 {
 "img":"img/n1.jpg",
@@ -122,6 +144,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
       });
     });
 
+    $scope.imageslider = [{
+         image: "img/PET/1slide.jpg",
+   },
+   {
+        image: "img/PET/2slide.jpg",
+  },
+  {
+       image: "img/PET/3slide.jpg",
+ },
+ ];
 
         $scope.flexprofile = [{
              image: "img/PET/prof.jpg",
@@ -155,26 +187,79 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
     $scope.tab = 1;
 
-    $(window).load(function() {
-      // The slider being synced must be initialized first
-      $('#carousel').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 210,
-        itemMargin: 5,
-        asNavFor: '#slider'
-      });
+    $scope.imageslider = [{
+         image: "img/films/slider1/1slide.jpg"
+   },
+   {
+        image: "img/films/slider1/2slide.jpg"
+  },
+  {
+       image: "img/films/slider1/3slide.jpg"
+ },
+  {
+       image: "img/films/slider1/4slide.jpg"
+ }
+ ];
 
-      $('#slider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel"
-      });
-    });
+    $scope.imagethumb = [{
+         image: "img/films/slider1/1.jpg"
+   },
+   {
+       image: "img/films/slider1/2.jpg"
+  },
+  {
+        image: "img/films/slider1/3.jpg"
+ },
+   {
+       image: "img/films/slider1/4.jpg"
+  }
+ ];
+
+
+     $scope.imageslider2 = [{
+          image: "img/films/slider2/1slide.jpg"
+    },
+    {
+         image: "img/films/slider2/2slide.jpg"
+   },
+   {
+        image: "img/films/slider2/3slide.jpg"
+  },
+   {
+        image: "img/films/slider2/4slide.jpg"
+  },
+  {
+       image: "img/films/slider2/5slide.jpg"
+ },
+ {
+      image: "img/films/slider2/6slide.jpg"
+},
+{
+     image: "img/films/slider2/7slide.jpg"
+}
+  ];
+
+     $scope.imagethumb2 = [{
+          image: "img/films/slider2/1.jpg"
+    },
+    {
+        image: "img/films/slider2/2.jpg"
+   },
+   {
+         image: "img/films/slider2/3.jpg"
+  },
+    {
+        image: "img/films/slider2/4.jpg"
+   },
+   {
+       image: "img/films/slider2/5.jpg"
+  },{
+      image: "img/films/slider2/6.jpg"
+ },
+ ,{
+     image: "img/films/slider2/7.jpg"
+}
+  ];
 
 
         $scope.flexprofile = [{
@@ -256,26 +341,40 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             desc: "Pharmaceutical",
            }];
 
-           $(window).load(function() {
-             // The slider being synced must be initialized first
-             $('#carousel').flexslider({
-               animation: "slide",
-               controlNav: false,
-               animationLoop: false,
-               slideshow: false,
-               itemWidth: 210,
-               itemMargin: 5,
-               asNavFor: '#slider'
-             });
 
-             $('#slider').flexslider({
-               animation: "slide",
-               controlNav: false,
-               animationLoop: false,
-               slideshow: false,
-               sync: "#carousel"
-             });
-           });
+               $scope.imageslider = [{
+                    image: "img/pof/1slide.jpg",
+              },
+              {
+                   image: "img/pof/2slide.jpg",
+             },
+             {
+                  image: "img/pof/3slide.jpg",
+            },
+             {
+                  image: "img/pof/4slide.jpg",
+            },
+             {
+                  image: "img/pof/5slide.jpg",
+            }
+            ];
+
+               $scope.imagethumb = [{
+                    image: "img/pof/1.jpg",
+              },
+              {
+                   image: "img/pof/2.jpg",
+             },
+             {
+                  image: "img/pof/3.jpg",
+            },
+              {
+                   image: "img/pof/4.jpg",
+             },
+             {
+                  image: "img/pof/5.jpg",
+            }
+            ];
 
                $scope.flexprofile = [{
                     image: "img/PET/prof.jpg",
@@ -306,26 +405,60 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 
-    $(window).load(function() {
-      // The slider being synced must be initialized first
-      $('#carousel').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        itemWidth: 210,
-        itemMargin: 5,
-        asNavFor: '#slider'
-      });
+    // $(window).load(function() {
+    //   // The slider being synced must be initialized first
+    //   $('#carousel').flexslider({
+    //     animation: "slide",
+    //     controlNav: false,
+    //     animationLoop: false,
+    //     slideshow: false,
+    //     itemWidth: 210,
+    //     itemMargin: 5,
+    //     asNavFor: '#slider'
+    //   });
+    //
+    //   $('#slider').flexslider({
+    //     animation: "slide",
+    //     controlNav: false,
+    //     animationLoop: false,
+    //     slideshow: false,
+    //     sync: "#carousel"
+    //   });
+    // });
 
-      $('#slider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        animationLoop: false,
-        slideshow: false,
-        sync: "#carousel"
-      });
-    });
+    $scope.imageslider = [{
+         image: "img/PET/1slide.jpg",
+   },
+   {
+        image: "img/PET/2slide.jpg",
+  },
+  {
+       image: "img/PET/3slide.jpg",
+ },
+  {
+       image: "img/PET/4slide.jpg",
+ },
+  {
+       image: "img/PET/5slide.jpg",
+ }
+ ];
+
+    $scope.imagethumb = [{
+         image: "img/PET/1.jpg",
+   },
+   {
+        image: "img/PET/2.jpg",
+  },
+  {
+       image: "img/PET/3.jpg",
+ },
+   {
+        image: "img/PET/4.jpg",
+  },
+  {
+       image: "img/PET/5.jpg",
+ }
+ ];
 
     $scope.flexprofile = [{
          image: "img/PET/prof.jpg",

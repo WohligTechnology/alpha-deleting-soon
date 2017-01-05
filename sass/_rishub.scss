@@ -187,7 +187,7 @@
         h2 {
             color: $brand-danger;
             padding-top: 35px;
-            font-size: 35px;
+            // font-size: 35px;
         }
 
         span {
@@ -250,7 +250,9 @@
 
 .rad-sec {
     letter-spacing: 3.3px;
-
+input{
+  top: -3px;
+}
     label {
         font-weight: 600;
     }
@@ -539,6 +541,7 @@
 
     .gal {
         margin: 0;
+
     }
 
     .gal {
@@ -624,10 +627,13 @@
         padding: 30px 0 50px;
   }
     .petslider {
+      .gal{
+
+      }
       .select-sec{
         .active{
             h2{
-              border-bottom: 3px solid $brand-danger !important;
+              border-bottom: 3px solid $brand-danger;
             }
 
         }
@@ -795,3 +801,40 @@
     min-height: 104px;
 }
   }
+
+
+.al-relative{
+  .ach-sec{
+    position: relative;
+  }
+  .img-set{
+    position: absolute;
+top: 22px;
+left: 50%;
+transform: translate(-50%);
+  }
+}
+.cl-box{
+  img{
+    width: 190px!important;
+  }
+}
+.slider2{
+  .flexslider {
+    margin: -28px 0 0px 0px
+  }
+}
+.slider1{
+  .flexslider {
+    margin: 0px 0 0px 0px;
+  }
+}
+.red-back{
+  background-color: $brand-danger;
+  .foot-triangle,.foot-triangle1
+  {
+    span i{
+      color: $brand-danger;
+    }  
+  }
+}

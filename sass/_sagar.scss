@@ -1,10 +1,16 @@
 .bags-liners {
+  .red-sec{
+        padding: 20px 0;
+  }
 .list-cont{
   ul{
     padding-left: 18px;
-
+}
+  li:before{
+      content:"• ";
+      font-size: 35px;
+      vertical-align: middle;
   }
-
   h3{
     font-weight: 600;
         font-size: 32px
@@ -14,9 +20,10 @@
   li{
     font-size: 16px;
 font-weight: 600;
-line-height: 2;
+line-height: 1;
 font-weight: 500;
 font-family: Roboto;
+list-style-type: none;
 
   }
     .policy-sec {
