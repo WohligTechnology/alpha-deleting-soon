@@ -226,7 +226,8 @@
         display: inline-block;
         vertical-align: middle;
         padding: 5px;
-        font-size: 15px;
+        font-size: 13px;
+        font-family: Roboto;
     }
 }
 
@@ -812,11 +813,6 @@
     }
 }
 
-.cl-box {
-    img {
-        width: 190px!important;
-    }
-}
 
 .slider2 {
     .flexslider {
@@ -853,4 +849,9 @@ background: url("../img/events/1.jpg");
 background-size: cover;
 background-repeat: no-repeat;
 height: 100vh;
+}
+.also-sec{
+  .pd0{
+    padding: 0 5px;
+  }
 }

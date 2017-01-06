@@ -646,12 +646,16 @@ font-family: Roboto;
                 padding: 16px;
                 position: relative;
                 height: 200px;
+                width: 230px!important;
 
                 .cl-box {
                     position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    img{
+                      width: 200px;
+                    }
                 }
             }
         }

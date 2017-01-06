@@ -100,7 +100,7 @@
       </div>
       <div class="col-md-12">
         <div class="client">
-          <flex-slider flex-slide="item in client track by $index" animation="slide" item-width="228" item-margin="5" animationloop="true" move="1" slideshowSpeed=1000>
+          <flex-slider flex-slide="item in client track by $index" animation="slide" item-width="230" item-margin="5" animationloop="true" slideshowSpeed=1000 move=6>
               <li>
                 <div class="cl-box">
                     <img src="{{item}}" alt="">
@@ -190,20 +190,20 @@ Shrink Film Capacity</p>
         </div>
         <div class="nw-slider">
         <flex-slider flex-slide="item in news track by $index" animation="slide" item-width="320" item-margin="60" animationloop="true" move="1" slideshowSpeed=1000>
-            <li>
-              <div class="nw-box">
-                <div class="al-relative">
-                  <img ng-src="{{item.img}}" alt="">
-                  <div class="date-sec">{{item.date}}</div>
-                </div>
-                <div class="nw-title">
-                  <p class="color-white text-cap">{{item.title}}</p>
-                </div>
-                <div class="nw-link">
-                  <a ui-sref="news-detail({id:item.id})" class="text-up">read more</a>
-                </div>
-              </div>
-            </li>
+        <li>
+          <div class="nw-box">
+            <div class="al-relative">
+              <img ng-src="{{item.img}}" alt="">
+              <div class="date-sec">{{item.date}}</div>
+            </div>
+            <div class="nw-title">
+              <p class="color-white text-cap">{{item.title}}</p>
+            </div>
+            <div class="nw-link">
+              <a ui-sref="news-detail({id:item.id})" class="text-up">read more</a>
+            </div>
+          </div>
+        </li>
         </flex-slider>
         </div>
       </div>

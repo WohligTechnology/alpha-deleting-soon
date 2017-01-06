@@ -93,7 +93,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         switch ($stateParams.id) {
             case '1':
                 $scope.newDetailss = {
-                    "img": "img/nw1.jpg",
+                    "img": "img/news/1.jpg",
                     "title": "Meet Alpha’s Plastic Super Family in Mexico! ",
                     "date": "September 2016",
                     "desc": "The packaging industry as a whole is very boring. Because it is predominantly in the B2B sector, the scope for experimenting is less. Majority of the companies have named their products based on their scientific qualities, which makes them difficult to remember. Only people from within the industry get the hang of it over a period of time.",
@@ -104,7 +104,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 break;
             case '2':
                 $scope.newDetailss = {
-                    "img": "img/n2.jpg",
+                    "img": "img/news/2.jpg",
                     "title": "A major stride for Alpha at the Expo Pack Mexico ",
                     "date": "May 17 2016",
                     "desc": "Alpha Plastomers is participating in Expo Pack – A 4-day event being held in Santa Fe in Mexico City, Mexico from 17th to 20th May, 2016. International exhibitors in the packaging industry will present the latest machinery, materials, components, containers, proven solutions for the processing, packaging, storage and distribution of products. Participating companies offer possibilities of new business opportunities, which being the main objective of the event. Alpha wishes to increase its presence globally and carve its name on the global map of the packaging industry. It will be an ideal platform for Alpha to showcase its products and distinguish them from its competitors.",
@@ -114,7 +114,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 break;
             case '3':
                 $scope.newDetailss = {
-                    "img": "img/n3.jpg",
+                    "img": "img/news/3.jpg",
                     "title": "Alpha Pharma Roorkee commissions ASB Nissei 12M machine",
                     "date": "February 2016",
                     "desc": "Alpha cements its presence in Rigid packaging industry by adding ASB Nissei 12M to allow greater flexibility in its product offerings. With the new addition, Alpha has taken its first step in what will be a steady increase in capacity to tailor to pharmaceutical and FMCG industries."
@@ -343,41 +343,26 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.navigation = NavigationService.getnav();
 
         $scope.flexapplication = [{
-            image: "img/pof/1.png",
-            desc: "Pharmaceutical",
-        }, {
-            image: "img/pof/2.png",
-            desc: "Pharmaceutical",
-        }, {
-            image: "img/pof/3.png",
-            desc: "Pharmaceutical",
-        }, {
-            image: "img/pof/4.png",
-            desc: "Pharmaceutical",
-        }, {
-            image: "img/pof/5.png",
-            desc: "Pharmaceutical",
-        }, {
             image: "img/pof/6.png",
             desc: "Pharmaceutical",
         }, {
+            image: "img/pof/5.png",
+            desc: "Books & Journals",
+        }, {
+            image: "img/pof/4.png",
+            desc: "Stationary",
+        }, {
+            image: "img/pof/3.png",
+            desc: "Cosmetics",
+        }, {
+            image: "img/pof/2.png",
+            desc: "Textiles",
+        }, {
+            image: "img/pof/1.png",
+            desc: "FMCG",
+        }, {
             image: "img/pof/7.png",
-            desc: "Pharmaceutical",
-        }, {
-            image: "img/pof/pills.png",
-            desc: "Pharmaceutical",
-        }, {
-            image: "img/pof/pills.png",
-            desc: "Pharmaceutical",
-        }, {
-            image: "img/pof/pills.png",
-            desc: "Pharmaceutical",
-        }, {
-            image: "img/pof/pills.png",
-            desc: "Pharmaceutical",
-        }, {
-            image: "img/pof/pills.png",
-            desc: "Pharmaceutical",
+            desc: "Frozen Food",
         }];
 
 
