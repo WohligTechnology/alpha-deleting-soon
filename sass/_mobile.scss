@@ -18,9 +18,6 @@
     padding-bottom: 10px;
   }
 }
-// .testimonial-sec .pd100{
-//   padding: 10px;
-// }
 .col-pd{
   padding-right: 10px;
   padding-left: 10px;
@@ -135,5 +132,173 @@ display: none;
     left: -54px !important;
     width: 55px;
 }
+
+
+.news{
+  .content-sec{
+    padding-top: 10px;
+    .category{
+          padding-bottom: 15px;
+    }
+     .category-selection{
+       padding-bottom: 0;
+      .selectpicker{
+            vertical-align: -webkit-baseline-middle;
+            font-size: 11px;
+  padding: 3px 42px 0 12px;
+          }
+   }
+  }
+  .news-sec:last-child{
+    padding-bottom: 10px;
+  }
 }
+.col-pd{
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.enquiry-form{
+  .form-group:last-child{
+    margin-top: 15px;
+  }
+  .table-sec{
+    .pd120{
+      padding: 0;
+    }
+  }
+  .slider-sec{
+    .pd40{
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+}
+.mtop-btm{
+  margin-top: 30px;
+}
+.add{
+  padding: 10px;
+}
+.count{
+  .col-black{
+    li{
+      padding: 18px 40px;
+      border: 0;
+    border-bottom: 1px solid;
+    }
+  }
+}
+.client{
+      padding: 0 30px;
+  .flexslider{
+    // margin-right: 0;
+    .flex-direction-nav{
+      display: none;
+    }
+    img{
+      width: auto;
+    }
+    li{
+      // width: 290px!important;
+    }
+  }
+}
+.nw-slider{
+  .flexslider{
+    .flex-direction-nav{
+      display: none;
+    }
+  }
+}
+.ft-40{
+  font-size: 28px;
+}
+.news-sec{
+  padding-bottom: 20px;
+  p{
+    text-align: justify;
+  }
+}
+.profile-box{
+    padding: 10px;
+    text-align: justify;
+}
+.petslider{
+  .flexslider{
+    .flex-direction-nav{
+      display: none;
+    }
+  }
+}
+.pet{
+  .pd100{
+    padding: 0;
+  }
+}
+.pdb10{
+  padding-bottom: 10px;
+}
+.also-sec{
+  h3{
+      font-size: 20px;
+  }
+
+}
+.pd100{
+  padding: 0!important;
+}
+.profile-desc{
+  height: 600px;
+}
+.pof{
+  .pd40 {
+    padding: 0 30px;
+    margin: 0;
+}
+.pd100{
+  padding: 0;
+}
+}
+
+.application-slider{
+  .flexslider{
+    .flex-control-nav{
+      display: block!important;
+    }
+    .flex-control-paging li a.flex-active{
+      background-color: $brand-danger;
+    }
+    .flex-direction-nav{
+      display: none;
+    }
+  }
+}
+.nw-main-title{
+  h1{
+    font-size: 20px;
+  }
+  }
+  .rl-news{
+    h3{
+      font-size: 20px;
+    }
+}
+
+// .gal{
+//   .flexslider{
+//     .flex-control-nav{
+//       display: block!important;
+//     }
+// }
+// }
+.pd-41{
+  padding: 0;
+}
+.pad-l-r{
+  padding: 0;
+}
+}
+
+
 @media (max-width: $screen-md-max) {}

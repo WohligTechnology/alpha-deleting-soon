@@ -43,7 +43,20 @@ Our focus is on customer satisfaction, which will be achieved by</span>
       <div class="text-center">
         <h2 class="color-red text-up font-revelution font-bold ft-40">Certificates</h2>
       </div>
-      <div class="col-md-3">
+      <div class="gal pd110">
+        <div class="slider1">
+          <flex-slider flex-slide="item in certificate track by $index" animation="slide" item-width="230" item-margin="10" animationloop="true" slideshowSpeed=1000>
+              <li>
+                <div class="cl-box">
+                    <a href="{{item.link}}" target="_blank"><img src="{{item.image}}" alt=""></a>
+                </div>
+                <p class="text-center item-desc">{{item.desc}}</p>
+              </li>
+          </flex-slider>
+        </div>
+
+      </div>
+      <!-- <div class="col-md-3">
         <div class="ql-box">
           <img src="img/cr1.jpg" alt="" class="img-responsive">
           <span>Alpha Plastomers, Daman</span>
@@ -66,13 +79,13 @@ Our focus is on customer satisfaction, which will be achieved by</span>
           <img src="img/cr4.jpg" alt="" class="img-responsive">
           <span>Alpha Plastomers, Roorkee</span>
         </div>
-      </div>
+      </div> -->
     </div>
 
   </div>
 </section>
 <section class="al-relative pad-box">
-  <div class="ribbon-red">
+  <div class="ribbon-red hidden-xs">
     <img src="img/black-ribbon.png" alt="">
   </div>
 <div class="container-fluid pad-l-r">

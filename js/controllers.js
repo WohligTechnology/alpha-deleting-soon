@@ -76,6 +76,43 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
 
+
+                $scope.certificate = [{
+                    image: "img/certificate/LD_Film-REACH.jpg",
+                    desc:"",
+                    link:"img/certificate/1.pdf"
+                }, {
+                    image: "img/certificate/LD_Film-ROHS.jpg",
+                    desc:"",
+                      link:"img/certificate/2.pdf"
+                }, {
+                    image: "img/certificate/PE-Migration.jpg",
+                    desc:"",
+                    link:"img/certificate/3.pdf"
+                },
+                {
+                    image: "img/certificate/POF-Migration.jpg",
+                    desc:"",
+                      link:"img/certificate/4.pdf"
+                },
+                {
+                    image: "img/certificate/POF-MSDS.jpg",
+                    desc:"",
+                      link:"img/certificate/5.pdf"
+                },
+                {
+                    image: "img/certificate/POF-REACH.jpg",
+                    desc:"",
+                      link:"img/certificate/6.pdf"
+                },
+                {
+                    image: "img/certificate/POF-ROHS.jpg",
+                    desc:"",
+                      link:"img/certificate/7.pdf"
+                }];
+
+
+
     })
     .controller('AboutUsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("aboutus"); //Use same name of .html file
@@ -201,48 +238,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
 
-        $(window).load(function() {
-            // The slider being synced must be initialized first
-            $('#carousel').flexslider({
-                animation: "slide",
-                controlNav: false,
-                animationLoop: false,
-                slideshow: false,
-                itemWidth: 210,
-                itemMargin: 5,
-                asNavFor: '#slider'
-            });
-
-            $('#slider').flexslider({
-                animation: "slide",
-                controlNav: false,
-                animationLoop: false,
-                slideshow: false,
-                sync: "#carousel"
-            });
-        });
 
         $scope.imageslider = [{
-            image: "img/PET/1slide.jpg",
+            image: "img/PET/1slide.jpg"
         }, {
-            image: "img/PET/2slide.jpg",
+            image: "img/PET/2slide.jpg"
         }, {
-            image: "img/PET/3slide.jpg",
+            image: "img/PET/3slide.jpg"
         }, ];
 
         $scope.flexprofile = [{
-            image: "img/PET/prof.jpg",
-            desc: "We have been very satisfied with Alpha Plastomers in every terms, may it be quality, timely supply, new product development or innovation. They have put us at complete ease with respect to our product packaging. We can now concentrate on our product & market developments.",
-            name: "Mr.Sachin Gupta",
-            company: "Kanika Enterprises",
-            location: "New Delhi"
-        }, {
-            image: "img/PET/prof.jpg",
-            desc: "We have been very satisfied with Alpha Plastomers in every terms, may it be quality, timely supply, new product development or innovation. They have put us at complete ease with respect to our product packaging. We can now concentrate on our product & market developments.",
-            name: "Mr.Sachin Gupta",
-            company: "Kanika Enterprises",
-            location: "New Delhi"
-        }, {
             image: "img/PET/prof.jpg",
             desc: "We have been very satisfied with Alpha Plastomers in every terms, may it be quality, timely supply, new product development or innovation. They have put us at complete ease with respect to our product packaging. We can now concentrate on our product & market developments.",
             name: "Mr.Sachin Gupta",
@@ -320,18 +325,6 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         name: "Mr.Sachin Gupta",
         company: "Kanika Enterprises",
         location: "New Delhi"
-    }, {
-        image: "img/PET/prof.jpg",
-        desc: "We have been very satisfied with Alpha Plastomers in every terms, may it be quality, timely supply, new product development or innovation. They have put us at complete ease with respect to our product packaging. We can now concentrate on our product & market developments.",
-        name: "Mr.Sachin Gupta",
-        company: "Kanika Enterprises",
-        location: "New Delhi"
-    }, {
-        image: "img/PET/prof.jpg",
-        desc: "We have been very satisfied with Alpha Plastomers in every terms, may it be quality, timely supply, new product development or innovation. They have put us at complete ease with respect to our product packaging. We can now concentrate on our product & market developments.",
-        name: "Mr.Sachin Gupta",
-        company: "Kanika Enterprises",
-        location: "New Delhi"
     }];
 
 })
@@ -344,65 +337,53 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
         $scope.flexapplication = [{
             image: "img/pof/6.png",
-            desc: "Pharmaceutical",
+            desc: "Pharmaceutical"
         }, {
             image: "img/pof/5.png",
-            desc: "Books & Journals",
+            desc: "Books & Journals"
         }, {
             image: "img/pof/4.png",
-            desc: "Stationary",
+            desc: "Stationary"
         }, {
             image: "img/pof/3.png",
-            desc: "Cosmetics",
+            desc: "Cosmetics"
         }, {
             image: "img/pof/2.png",
-            desc: "Textiles",
+            desc: "Textiles"
         }, {
             image: "img/pof/1.png",
-            desc: "FMCG",
+            desc: "FMCG"
         }, {
             image: "img/pof/7.png",
-            desc: "Frozen Food",
+            desc: "Frozen Food"
         }];
 
 
         $scope.imageslider = [{
-            image: "img/pof/1slide.jpg",
+            image: "img/pof/1slide.jpg"
         }, {
-            image: "img/pof/2slide.jpg",
+            image: "img/pof/2slide.jpg"
         }, {
-            image: "img/pof/3slide.jpg",
+            image: "img/pof/3slide.jpg"
         }, {
-            image: "img/pof/4slide.jpg",
+            image: "img/pof/4slide.jpg"
         }, {
-            image: "img/pof/5slide.jpg",
+            image: "img/pof/5slide.jpg"
         }];
 
         $scope.imagethumb = [{
-            image: "img/pof/1.jpg",
+            image: "img/pof/1.jpg"
         }, {
-            image: "img/pof/2.jpg",
+            image: "img/pof/2.jpg"
         }, {
-            image: "img/pof/3.jpg",
+            image: "img/pof/3.jpg"
         }, {
-            image: "img/pof/4.jpg",
+            image: "img/pof/4.jpg"
         }, {
-            image: "img/pof/5.jpg",
+            image: "img/pof/5.jpg"
         }];
 
         $scope.flexprofile = [{
-            image: "img/PET/prof.jpg",
-            desc: "We have been very satisfied with Alpha Plastomers in every terms, may it be quality, timely supply, new product development or innovation. They have put us at complete ease with respect to our product packaging. We can now concentrate on our product & market developments.",
-            name: "Mr.Sachin Gupta",
-            company: "Kanika Enterprises",
-            location: "New Delhi"
-        }, {
-            image: "img/PET/prof.jpg",
-            desc: "We have been very satisfied with Alpha Plastomers in every terms, may it be quality, timely supply, new product development or innovation. They have put us at complete ease with respect to our product packaging. We can now concentrate on our product & market developments.",
-            name: "Mr.Sachin Gupta",
-            company: "Kanika Enterprises",
-            location: "New Delhi"
-        }, {
             image: "img/PET/prof.jpg",
             desc: "We have been very satisfied with Alpha Plastomers in every terms, may it be quality, timely supply, new product development or innovation. They have put us at complete ease with respect to our product packaging. We can now concentrate on our product & market developments.",
             name: "Mr.Sachin Gupta",
@@ -417,64 +398,32 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
 
-        // $(window).load(function() {
-        //   // The slider being synced must be initialized first
-        //   $('#carousel').flexslider({
-        //     animation: "slide",
-        //     controlNav: false,
-        //     animationLoop: false,
-        //     slideshow: false,
-        //     itemWidth: 210,
-        //     itemMargin: 5,
-        //     asNavFor: '#slider'
-        //   });
-        //
-        //   $('#slider').flexslider({
-        //     animation: "slide",
-        //     controlNav: false,
-        //     animationLoop: false,
-        //     slideshow: false,
-        //     sync: "#carousel"
-        //   });
-        // });
 
         $scope.imageslider = [{
-            image: "img/PET/1slide.jpg",
+            image: "img/PET/1slide.jpg"
         }, {
-            image: "img/PET/2slide.jpg",
+            image: "img/PET/2slide.jpg"
         }, {
-            image: "img/PET/3slide.jpg",
+            image: "img/PET/3slide.jpg"
         }, {
-            image: "img/PET/4slide.jpg",
+            image: "img/PET/4slide.jpg"
         }, {
-            image: "img/PET/5slide.jpg",
+            image: "img/PET/5slide.jpg"
         }];
 
         $scope.imagethumb = [{
-            image: "img/PET/1.jpg",
+            image: "img/PET/1.jpg"
         }, {
-            image: "img/PET/2.jpg",
+            image: "img/PET/2.jpg"
         }, {
-            image: "img/PET/3.jpg",
+            image: "img/PET/3.jpg"
         }, {
-            image: "img/PET/4.jpg",
+            image: "img/PET/4.jpg"
         }, {
-            image: "img/PET/5.jpg",
+            image: "img/PET/5.jpg"
         }];
 
         $scope.flexprofile = [{
-            image: "img/PET/prof.jpg",
-            desc: "We have been very satisfied with Alpha Plastomers in every terms, may it be quality, timely supply, new product development or innovation. They have put us at complete ease with respect to our product packaging. We can now concentrate on our product & market developments.",
-            name: "Mr.Sachin Gupta",
-            company: "Kanika Enterprises",
-            location: "New Delhi"
-        }, {
-            image: "img/PET/prof.jpg",
-            desc: "We have been very satisfied with Alpha Plastomers in every terms, may it be quality, timely supply, new product development or innovation. They have put us at complete ease with respect to our product packaging. We can now concentrate on our product & market developments.",
-            name: "Mr.Sachin Gupta",
-            company: "Kanika Enterprises",
-            location: "New Delhi"
-        }, {
             image: "img/PET/prof.jpg",
             desc: "We have been very satisfied with Alpha Plastomers in every terms, may it be quality, timely supply, new product development or innovation. They have put us at complete ease with respect to our product packaging. We can now concentrate on our product & market developments.",
             name: "Mr.Sachin Gupta",
