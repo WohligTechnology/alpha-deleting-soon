@@ -9,6 +9,37 @@
       <div class="col-md-8">
         <div class="nw-detail">
           <div class="al-relative">
+          <img src="{{newDetailss.img}}" alt="" class="img-responsive">
+          <div class="date-sec">
+            <span>{{newDetailss.date}}</span>
+            <!-- <span>September 2016</span> -->
+          </div>
+          </div>
+<div class="nw-main-title">
+  <h1 class="color-red font-bold"> {{newDetailss.title}}</h1>
+</div>
+<div class="nw-detail">
+  <p ng-bind-html="newDetailss.desc">
+  </p>
+  <p ng-bind-html="newDetailss.desc2">
+  </p ng-bind-html="newDetailss.desc3">
+  </p>
+    <p ng-bind-html=newDetailss.desc4>
+  </p>
+</div>
+
+        </div>
+
+      </div>
+
+
+
+
+<!-- ===================static part of news-details========================== -->
+
+      <!-- <div class="col-md-8">
+        <div class="nw-detail">
+          <div class="al-relative">
           <img src="img/nw1.jpg" alt="" class="img-responsive">
           <div class="date-sec">
             <span>September 2016</span>
@@ -33,8 +64,12 @@
 
         </div>
 
-      </div>
-      <div class="col-md-4">
+      </div> -->
+
+
+<!-- ===================static part of news-details========================== -->
+
+  <div class="col-md-4">
 <div class="rl-news">
   <h2 class="color-red font-bold">
     RELATED NEWS

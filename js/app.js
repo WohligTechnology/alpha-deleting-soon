@@ -34,7 +34,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             controller: 'JourneyCtrl'
         })
         .state('news-detail', {
-            url: "/news-detail",
+            url: "/news-detail/:id",
             templateUrl: "views/template.html",
             controller: 'NewsDetailCtrl'
         })
