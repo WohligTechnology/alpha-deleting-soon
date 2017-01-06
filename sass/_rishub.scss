@@ -667,6 +667,7 @@
     padding-bottom: 20px;
 
     h3 {
+      margin: 0;
         position: absolute;
         top: 50%;
         left: 50%;
@@ -831,11 +832,25 @@
 
 .red-back {
     background-color: $brand-danger;
-
+.foot-triangle{
+      border-color: transparent transparent #fff transparent;
+}
+.foot-triangle1{
+      border-color: #fff transparent transparent transparent;
+}
     .foot-triangle,
     .foot-triangle1 {
         span i {
             color: $brand-danger;
         }
     }
+}
+.petslider{
+  cursor: pointer;
+}
+.events{
+background: url("../img/events/1.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+height: 100vh;
 }

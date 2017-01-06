@@ -136,48 +136,25 @@
 			<div class="container">
 			<div class="gallery-holder pd-41">
 				<h2 class="text-center text-up font-revelution text-head color-red ft-40">GALLERY</h2>
-					<div id="slider" class="flexslider gal">
-							<ul class="slides">
-						<li>
-							<img src="img/ppe/PP-PE Slider.jpg" />
-						</li>
-						<li>
-							<img src="img/ppe/PP-PE Slider.jpg" />
-						</li>
-						<li>
-							<img src="img/ppe/PP-PE Slider.jpg" />
-						</li>
-						<li>
-							<img src="img/ppe/PP-PE Slider.jpg" />
-						</li>
-						<li>
-							<img src="img/ppe/PP-PE Slider.jpg" />
-						</li>
-						<!-- items mirrored twice, total of 12 -->
-					</ul>
-				</div>
-				<div id="carousel" class="flexslider thumb">
-					<ul class="slides">
-						<li>
-							<img src="img/ppe/1.jpg"/>
-						</li>
-						<li>
-							<img src="" />
-						</li>
-						<li>
-							<img src="" />
-						</li>
-						<li>
-							<img src="" />
-						</li>
-						<li>
-							<img src="" />
-						</li>
-						<li>
-							<img src="" />
-						</li>
-						<!-- items mirrored twice, total of 12 -->
-					</ul>
+				<div class="gal">
+					<div class="slider1">
+						<flex-slider flex-slide="item in imageslider track by $index" animation="slide" control-Nav="false" animationloop="true" move="1" slideshowSpeed=1000 sync="#carousel" slider-id="slider" slideshow="false">
+								<li>
+										<img ng-src="{{item.image}}" alt="">
+								</li>
+						</flex-slider>
+					</div>
+
+						<div class="slider2">
+
+
+						<flex-slider flex-slide="item in imagethumb track by $index" animation="slide" item-width="228" item-margin="5" animationloop="true" move="1" slideshowSpeed=1000 direction-Nav="false" control-Nav="false" as-Nav-For="#slider" slider-id="carousel" slideshow="false">
+								<li>
+										<img ng-src="{{item.image}}" alt="">
+								</li>
+						</flex-slider>
+
+</div>
 				</div>
 			</div>
 		</div>
@@ -280,13 +257,13 @@
 				<div class="col-md-6">
 					<div class="special-films">
 						<h3>Speciality Films</h3>
-						<img src="img/ppe/vmore1.jpg" alt="" class="img-responsive">
+						<img src="img/films.jpg" alt="" class="img-responsive">
 					</div>
 				</div>
 				<div class="col-md-6">
 					<div class="bags-liners">
-						<h3>PP/PE Bags and Liners</h3>
-						<img src="img/ppe/vmore2.jpg" alt="" class="img-responsive">
+						<h3>POF Shrink Films</h3>
+						<img src="img/pof.jpg" alt="" class="img-responsive">
 					</div>
 				</div>
 			</div>

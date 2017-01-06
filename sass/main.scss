@@ -502,6 +502,33 @@ font-family: Roboto;
             padding: 15px 40px;
             position: relative;
 
+
+            //basic
+            &:before {
+                background: #ff0000;
+                content: "";
+                width: 26px;
+                height: 57px;
+                /* z-index: 9999; */
+                position: absolute;
+                transform: rotate(13deg);
+                top: 1px;
+                left: -10px;
+            }
+
+            &:after {
+                background: #ff0000;
+                content: "";
+                width: 26px;
+                height: 63px;
+                /* z-index: 9999; */
+                position: absolute;
+                transform: rotate(13deg);
+                top: -4px;
+                right: -6px;
+            }
+            background-color: #ff0000;
+
             a {
                 text-decoration: none;
                 color: #fff;
