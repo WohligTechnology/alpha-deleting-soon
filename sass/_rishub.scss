@@ -151,9 +151,10 @@
 .news-sec {
     h4 {
         color: $brand-danger;
-        font-weight: 700;
+        font-weight: 400;
         font-size: 20px;
         text-transform: uppercase;
+            font-family: 'reem kufi';
     }
 
     p {
@@ -161,7 +162,8 @@
         // text-align: justify;
         letter-spacing: 0.5px;
         line-height: 18px;
-        font-family: Roboto;
+        font-family: 'roboto';
+        font-weight: 300;
     }
 
     .btn-default {
