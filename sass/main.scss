@@ -386,7 +386,7 @@ padding-bottom: 7px;
 
     .submit-sec {
         margin-top: 4%;
-        margin-bottom: 10%;
+          margin-bottom: 4%;
 
         .btn {
             text-transform: uppercase;
@@ -1358,6 +1358,26 @@ font-family: Roboto;
   p{
     text-align: right;
   }
+}
+.mt50{
+      margin-top: 50px;
+}
+.widht100{
+  width: 100%;
+}
+.img-animated{
+  overflow: hidden;
+  .hover-sec{
+        @include transition(all 300ms ease);
+  }
+&:hover{
+  .hover-sec{
+
+    	 @include transform(scale(1.1));
+        @include transition(all 300ms ease);
+  }
+}
+
 }
 @import "sagar";
 @import "rishub";

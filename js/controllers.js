@@ -337,7 +337,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
         $scope.flexapplication = [{
             image: "img/pof/6.png",
-            desc: "Pharmaceutical"
+            desc: "Pharmaceuticals"
         }, {
             image: "img/pof/5.png",
             desc: "Books & Journals"

@@ -32,18 +32,18 @@
       <div class="al-title text-center mtop-btm">
         <h1 class="text-up color-red font-bold font-revelution ft-40">products</h1>
       </div>
-      <div class="side-pad">
+      <div class="side-pad ">
         <div class="col-md-6 padding0">
-          <div class="pr-box">
-            <img src="img/p1.jpg" alt="" class="img-responsive width100">
+          <div class="pr-box img-animated" ui-sref="bags-liners">
+            <img src="img/p1.jpg" alt="" class="img-responsive width100 hover-sec">
             <div class="over-text">
               <h2 class="text-up text-center color-white font-bold">FLEXIBLE</h2>
             </div>
           </div>
         </div>
         <div class="col-md-6 padding0">
-          <div class="pr-box">
-            <img src="img/rigid-photo.jpg" alt="" class="img-responsive width100">
+          <div class="pr-box img-animated" ui-sref="pof">
+            <img src="img/rigid-photo.jpg" alt="" class="img-responsive width100 hover-sec">
             <div class="over-text">
               <h2 class="text-up text-center color-white font-bold">RIGID</h2>
             </div>
@@ -100,7 +100,7 @@
       </div>
       <div class="col-md-12">
         <div class="client">
-          <flex-slider flex-slide="item in client track by $index" animation="slide" item-width="230" item-margin="5" animationloop="true" slideshowSpeed=1000>
+          <flex-slider flex-slide="item in client track by $index" animation="slide" item-width="230" item-margin="5" animationloop="true" move="1" slideshow-Speed="2000">
               <li>
                 <div class="cl-box">
                     <img src="{{item}}" alt="">
@@ -130,9 +130,8 @@
           <div class="j2">
             <div class="jr2-text display-inline">
               <h4 class="color-red year-r">2016</h4>
-              <p class="desc">Introduce
-Collation Shrink
-and Stretch Films</p>
+              <p class="desc">
+Diversified to manufacture Mulch film</p>
             </div>
           <div class="display-inline jr2-img">
               <img src="img/j2.png" alt="">
@@ -143,10 +142,8 @@ and Stretch Films</p>
           <div class="j3">
             <div class="jr3-text display-inline">
               <h4 class="color-red year-r">2015</h4>
-              <p class="desc">Doubled POF
-Shrink Film
-capacity to
-3,600 MT/year</p>
+              <p class="desc">
+Diversified to manufacture Mulch film</p>
             </div>
             <div class="jr3-img">
   <img src="img/j3.png" alt="" class="img-responsive">
@@ -162,8 +159,7 @@ capacity to
             </div>
             <div class="jr4-text display-inline" >
               <h4 class="color-red year-r">2013</h4>
-              <p class="desc">Increased POF
-Shrink Film Capacity</p>
+              <p class="desc">Became India’s largest POF Shrink Film manufacturer (3,600 MT/year)</p>
             </div>
           </div>
 
@@ -171,7 +167,7 @@ Shrink Film Capacity</p>
 
       </div>
       <div class="text-center over-fl mt-50">
-        <button type="button" name="button" class="text-up btn-red">view journey</button>
+        <button type="button" name="button" class="text-up btn-red" ui-sref="journey">view journey</button>
       </div>
     </div>
   </div>
@@ -188,12 +184,12 @@ Shrink Film Capacity</p>
         <div class="text-center">
           <h1 class="text-up color-white font-bold font-revelution ft-40">LATEST NEWS</h1>
         </div>
-        <div class="nw-slider">
+        <div class="nw-slider ">
         <flex-slider flex-slide="item in news track by $index" animation="slide" item-width="320" item-margin="60" animationloop="true" move="1" slideshowSpeed=1000>
         <li>
-          <div class="nw-box">
-            <div class="al-relative">
-              <img ng-src="{{item.img}}" alt="">
+          <div class="nw-box" ui-sref="news-detail({id:item.id})">
+            <div class="al-relative img-animated">
+              <img ng-src="{{item.img}}" alt="" class="hover-sec">
               <div class="date-sec">{{item.date}}</div>
             </div>
             <div class="nw-title">

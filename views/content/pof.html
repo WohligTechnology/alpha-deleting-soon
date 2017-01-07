@@ -29,7 +29,7 @@
         <h2 class="text-up font-revelution text-head color-red text-center pdb10 ft-40">OPTIONS</h2>
         <div class="option-block">
           <img src="img/pof/11.png" alt="" class="img-responsive">
-          <p>8 Color Printing</p>
+          <p>6 Color Printing</p>
         </div>
         <div class="option-block">
           <img src="img/pof/10.png" alt="" class="img-responsive">
@@ -55,34 +55,34 @@
           <table class="table table-bordered size-table">
             <thead class="thead-default">
               <tr>
-                <th>Sr No</th>
+
                 <th>Microns</th>
                 <th>Length(MTS.)</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>01</td>
+
                 <td>12</td>
                 <td>1665</td>
               </tr>
               <tr>
-                <td>02</td>
+
                 <td>15</td>
                 <td>1332</td>
               </tr>
               <tr>
-                <td>03</td>
+
                 <td>19</td>
                 <td>1067</td>
               </tr>
               <tr>
-                <td>04</td>
+
                 <td>25</td>
                 <td>800</td>
               </tr>
               <tr>
-                <td>05</td>
+
                 <td>30</td>
                 <td>400</td>
               </tr>
@@ -119,7 +119,9 @@
           <div class="slider1">
             <flex-slider flex-slide="item in imageslider track by $index" animation="slide" control-Nav="false" animationloop="true" move="1" slideshowSpeed=1000 sync="#carousel" slider-id="slider">
                 <li>
-                    <img ng-src="{{item.image}}" alt="">
+
+                    <img ng-src="{{item.image}}" alt="" >
+
                 </li>
             </flex-slider>
           </div>
@@ -129,7 +131,9 @@
 
             <flex-slider flex-slide="item in imagethumb track by $index" animation="slide" item-width="228" item-margin="5" animationloop="true" move="1" slideshowSpeed=1000 direction-Nav="false" control-Nav="false" as-Nav-For="#slider" slider-id="carousel">
                 <li>
-                    <img ng-src="{{item.image}}" alt="">
+                  <div class="img-animated">
+                    <img ng-src="{{item.image}}" alt="" class="hover-sec">
+                  </div>
                 </li>
             </flex-slider>
 
@@ -234,15 +238,15 @@
       <h2 class="text-center color-red font-revelution text-head ft-40">Also View</h2>
       <div class="row">
         <div class="col-md-6 pd0">
-          <div class="special-films pdb10">
+          <div class="special-films img-animated" ui-sref="speciality-film">
             <h3>Speciality Films</h3>
-            <img src="img/films.jpg" alt="" class="img-responsive">
+            <img src="img/films.jpg" alt="" class="img-responsive hover-sec">
           </div>
         </div>
         <div class="col-md-6 pd0">
-          <div class="bags-liners pdb10">
+          <div class="bags-liners img-animated" ui-sref="bags-liners">
             <h3>PP/PE Bags and Liners</h3>
-            <img src="img/ppe.jpg" alt="" class="img-responsive">
+            <img src="img/ppe.jpg" alt="" class="img-responsive hover-sec">
           </div>
         </div>
       </div>

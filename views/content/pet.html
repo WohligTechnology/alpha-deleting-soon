@@ -47,7 +47,9 @@
 
                     <flex-slider flex-slide="item in imagethumb track by $index" animation="slide" item-width="228" item-margin="5" animationloop="true" move="1" slideshowSpeed=1000 direction-Nav="false" control-Nav="false" as-Nav-For="#slider" slider-id="carousel">
                         <li>
-                            <img ng-src="{{item.image}}" alt="">
+                          <div class="img-animated">
+                            <img ng-src="{{item.image}}" alt="" class="hover-sec">
+                          </div>
                         </li>
                     </flex-slider>
 
