@@ -6,10 +6,10 @@
       <li ng-repeat="submenu in menu.subnav" class="{{menu.classis}}">
         <a ui-serf="{{submenu.anchor}}" ng-if="submenu.anchor">{{submenu.name}}</a>
         <a herf="{{submenu.link}}" ng-if="submenu.link">{{submenu.name}}</a>
-        <ul class="dropdown-menu" ng-if="menu.menu.subnavs!='';">
-          <li ng-repeat="submenu in menu.menu.subnavs" class="{{menu.classis}}">
-            <a ui-serf="{{submenu.anchor}}" ng-if="submenu.anchor">{{submenu.name}}</a>
-            <a herf="{{submenu.link}}" ng-if="submenu.link">{{submenu.name}}</a>
+        <ul class="dropdown-menu-second" ng-if="submenu.subnavs!='';">
+          <li ng-repeat="sub in submenu.subnavs" class="{{menu.classis}}">
+            <a ui-serf="{{sub.anchor}}" ng-if="sub.anchor">{{sub.name}}</a>
+            <a herf="{{sub.link}}" ng-if="sub.link">{{sub.name}}</a>
           </li>
         </ul>
       </li>
