@@ -22,7 +22,33 @@ var navigationservice = angular.module('navigationservice', [])
         name: "Product",
         classis: "active",
         anchor: "product",
-        subnav: []
+        subnav: [{
+            name: "Flexible",
+            classis: "active",
+            anchor: "flexible",
+            isId: "yes",
+            subnavs: [{
+                name: "PP/PE Bags & Liners",
+                classis: "active",
+                anchor: "bags-liners",
+                isId: "yes",
+            }, {
+                name: "POF Shrink Film",
+                classis: "active",
+                anchor: "pof",
+                isId: "no",
+            },{
+                name: "Speciality Films",
+                classis: "active",
+                anchor: "speciality-film",
+                isId: "no",
+            }]
+        }, {
+            name: "Rigid",
+            classis: "active",
+            anchor: "rigid",
+            isId: "no",
+        }]
     },
     // {
     //     name: "Clients",
@@ -47,9 +73,9 @@ var navigationservice = angular.module('navigationservice', [])
         anchor: "careers",
         subnav: []
     },{
-        name: "Contact us",
+        name: "Contact Us",
         classis: "active",
-        anchor: "plant-location",
+        anchor: "contact-us",
         subnav: []
     }];
 

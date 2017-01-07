@@ -63,9 +63,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             "title": "Meet Alpha’s Plastic Super Family in Mexico!"
         }];
     })
-    .controller('PlantLocationCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-        $scope.template = TemplateService.changecontent("plant-location"); //Use same name of .html file
-        $scope.menutitle = NavigationService.makeactive("Plant Location"); //This is the Title of the Website
+    .controller('ContactCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("contact-us"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Contact Us"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
 
