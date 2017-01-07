@@ -158,6 +158,34 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
                 }
 
                 break;
+            case '4':
+                $scope.newDetailss = {
+                  "img": "img/news/4.jpg",
+                  "title": "First Annual Meet",
+                  "date": "November 9-10, 2015",
+                  "desc": "Alpha Plastomers held its first annual meet right before Diwali. During the two days, everything from cost control to business strategies were discussed."
+                }
+
+                break;
+            case '5':
+                $scope.newDetailss = {
+                  "img": "img/news/5.jpg",
+                  "title": "Alpha enters North American market",
+                  "date": "October 2015",
+                  "desc": "Alpha is delighted to announce its presence in USA. A very relieved Akshay Agarwal, Director of Alpha Plastomers, said “After months of back-and-forth negotiations, we were able to come to an agreement with our USA counterparts allowing us to move closer to our customers and allowing our customers to reduce inventory and transit days."
+                }
+
+                break;
+            case '6':
+                $scope.newDetailss = {
+                  "img": "img/news/6.jpg",
+                  "title": "Alpha commissions Rajoo 3-Layer Multifold line",
+                  "date": "October 2015",
+                  "desc": "Over past 27 years, Alpha has shown it is not afraid to add new products to its portfolio to keep itself one of leading packaging suppliers in India. With the addition of 3-layer blown film line, Alpha has moved the goal post yet again and is perfectly poised to become a true “global corporation” With Rajoo’s 3-Layer Multifold line, Alpha will be adding Collation shrink film (also known as LD shrink film), stretch film, and “milk pouch” film.",
+                  "desc2": "Please contact your sales representative to learn more about Alpha’s new product offerings."
+                }
+
+                break;
             default:
 
         }
