@@ -37,13 +37,13 @@
     <div class="petslider">
         <img src="img/black-ribbon.png" alt="" class="img-responsive test-banner hidden-xs">
         <div class="container">
-            {{tab}}
             <div class="gallery-holder pd-41">
                 <!-- <h2 class="text-center text-up font-revelution text-head color-red">GALLERY</h2> -->
                 <div class="select-sec text-center">
                     <button type="button" class="btn btn-default text-center text-up font-revelution text-head color-red" ng-click="tab = 1" ng-class="{'active':tab == 1}">
   Collation Shrink Film
   </button>
+   <span class="btn-separator"></span>
                     <button type="button" class="btn btn-default text-center text-up font-revelution text-head color-red" ng-click="tab = 2" ng-class="{'active':tab == 2}">
   Agricultural Mulch Film
   </button>
@@ -58,7 +58,7 @@
                         </flex-slider>
                     </div>
 
-                    <div class="slider2">
+                    <div class="slider2 hidden-xs">
 
 
                         <flex-slider flex-slide="item in imagethumb track by $index" animation="slide" item-width="228" item-margin="5" animationloop="true" move="1" slideshowSpeed=1000 direction-Nav="false" control-Nav="false" as-Nav-For="#slider" slider-id="carousel"  ng-if="tab == 1">
@@ -78,7 +78,7 @@
     </flex-slider>
 </div>
 
-<div class="slider2">
+<div class="slider2 hidden-xs">
 
 
     <flex-slider flex-slide="item in imagethumb2 track by $index" animation="slide" item-width="228" item-margin="5" animationloop="true" move="1" slideshowSpeed=1000 direction-Nav="false" control-Nav="false" as-Nav-For="#slider2" slider-id="carousel2" ng-if="tab == 2">
@@ -128,7 +128,7 @@
     </div>
 
     <div class="enquiry-form">
-        <button type="button" class="btn btn-default btn-brochure">Downlaod Brochure</button>
+        <button type="button" class="btn btn-default btn-brochure hidden-xs">Downlaod Brochure</button>
         <div class="container">
             <div class="enquiry-sec text-center pdt-40">
                 <h2 class="text-up font-revelution text-head color-red">ENQUIRE NOW</h2>

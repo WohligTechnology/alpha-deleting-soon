@@ -70,6 +70,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.navigation = NavigationService.getnav();
 
     })
+    .controller('FlexibleCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("flexible"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("Flexible"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+
+    })
     .controller('QualityPolicyCtrl', function($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("quality-policy"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Quality Policy"); //This is the Title of the Website
@@ -268,12 +275,46 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
         $scope.imageslider = [{
-            image: "img/PET/1slide.jpg"
+            image: "img/ppe/Big/1.jpg"
         }, {
-            image: "img/PET/2slide.jpg"
+            image: "img/ppe/Big/2.jpg"
         }, {
-            image: "img/PET/3slide.jpg"
-        }, ];
+            image: "img/ppe/Big/3.jpg"
+        },
+        {
+            image: "img/ppe/Big/4.jpg"
+        },
+        {
+            image: "img/ppe/Big/5.jpg"
+        },
+        {
+            image: "img/ppe/Big/6.jpg"
+        },
+        {
+            image: "img/ppe/Big/7.jpg"
+        },
+        {
+            image: "img/ppe/Big/8.jpg"
+        } ];
+
+        $scope.imagethumb = [{
+            image: "img/ppe/Thumbnails/1.jpg"
+        }, {
+            image: "img/ppe/Thumbnails/2.jpg"
+        }, {
+            image: "img/ppe/Thumbnails/3.jpg"
+        }, {
+            image: "img/ppe/Thumbnails/4.jpg"
+        },{
+            image: "img/ppe/Thumbnails/5.jpg"
+        },{
+            image: "img/ppe/Thumbnails/6.jpg"
+        },{
+            image: "img/ppe/Thumbnails/7.jpg"
+        },{
+            image: "img/ppe/Thumbnails/8.jpg"
+        }];
+
 
         $scope.flexprofile = [{
             image: "img/PET/prof.jpg",
@@ -315,37 +356,52 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
     $scope.imageslider2 = [{
-        image: "img/films/slider2/1slide.jpg"
+        image: "img/films/slider2/Big/1.jpg"
     }, {
-        image: "img/films/slider2/2slide.jpg"
+        image: "img/films/slider2/Big/2.jpg"
     }, {
-        image: "img/films/slider2/3slide.jpg"
+        image: "img/films/slider2/Big/3.jpg"
     }, {
-        image: "img/films/slider2/4slide.jpg"
+        image: "img/films/slider2/Big/4.jpg"
     }, {
-        image: "img/films/slider2/5slide.jpg"
+        image: "img/films/slider2/Big/5.jpg"
     }, {
-        image: "img/films/slider2/6slide.jpg"
+        image: "img/films/slider2/Big/6.jpg"
     }, {
-        image: "img/films/slider2/7slide.jpg"
+        image: "img/films/slider2/Big/7.jpg"
+    }, {
+        image: "img/films/slider2/Big/8.jpg"
+    }, {
+        image: "img/films/slider2/Big/9.jpg"
+    }, {
+        image: "img/films/slider2/Big/10.jpg"
+    }, {
+        image: "img/films/slider2/Big/11.jpg"
     }];
 
     $scope.imagethumb2 = [{
-        image: "img/films/slider2/1.jpg"
+        image: "img/films/slider2/Thumbnails/1.jpg"
     }, {
-        image: "img/films/slider2/2.jpg"
+      image: "img/films/slider2/Thumbnails/2.jpg"
     }, {
-        image: "img/films/slider2/3.jpg"
+      image: "img/films/slider2/Thumbnails/3.jpg"
     }, {
-        image: "img/films/slider2/4.jpg"
+        image: "img/films/slider2/Thumbnails/4.jpg"
     }, {
-        image: "img/films/slider2/5.jpg"
+        image: "img/films/slider2/Thumbnails/5.jpg"
     }, {
-        image: "img/films/slider2/6.jpg"
-    }, , {
-        image: "img/films/slider2/7.jpg"
+        image: "img/films/slider2/Thumbnails/6.jpg"
+    }, {
+        image: "img/films/slider2/Thumbnails/7.jpg"
+    }, {
+        image: "img/films/slider2/Thumbnails/8.jpg"
+    }, {
+        image: "img/films/slider2/Thumbnails/9.jpg"
+    }, {
+        image: "img/films/slider2/Thumbnails/10.jpg"
+    }, {
+        image: "img/films/slider2/Thumbnails/11.jpg"
     }];
-
 
     $scope.flexprofile = [{
         image: "img/PET/prof.jpg",

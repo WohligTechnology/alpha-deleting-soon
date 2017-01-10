@@ -26,28 +26,28 @@ var navigationservice = angular.module('navigationservice', [])
             name: "Flexible",
             classis: "active",
             anchor: "flexible",
-            isId: "yes",
+            // isId: "yes",
             subnavs: [{
                 name: "PP/PE Bags & Liners",
                 classis: "active",
                 anchor: "bags-liners",
-                isId: "yes",
+                // isId: "yes",
             }, {
                 name: "POF Shrink Film",
                 classis: "active",
                 anchor: "pof",
-                isId: "no",
+                // isId: "no",
             },{
                 name: "Speciality Films",
                 classis: "active",
                 anchor: "speciality-film",
-                isId: "no",
+                // isId: "no",
             }]
         }, {
             name: "Rigid",
             classis: "active",
             anchor: "rigid",
-            isId: "no",
+            // isId: "no",
         }]
     },
     // {

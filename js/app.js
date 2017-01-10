@@ -38,6 +38,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'NewsDetailCtrl'
         })
+        .state('flexible', {
+            url: "/flexible",
+            templateUrl: "views/template.html",
+            controller: 'FlexibleCtrl'
+        })
         .state('quality-policy', {
             url: "/quality-policy",
             templateUrl: "views/template.html",

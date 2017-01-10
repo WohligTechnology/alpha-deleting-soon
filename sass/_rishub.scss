@@ -230,7 +230,7 @@
         display: inline-block;
         vertical-align: middle;
         padding: 5px;
-        font-size: 13px;
+        font-size: 14px;
         font-family: Roboto;
     }
 }
@@ -636,7 +636,11 @@
     .products-sec {
         padding: 30px 0 50px;
     }
-
+    .btn-separator{
+      border: 1px solid #000;
+        padding: 20px 0;
+        margin: 0 10px;
+    }
     .petslider {
         .gal {}
 
@@ -646,11 +650,11 @@
     border-bottom: 3px solid $brand-danger;
   }
 }
+
         button {
             background-color: transparent;
             border: 0;
             box-shadow: none;
-            margin: 0 30px;
             color: $brand-danger;
             border-bottom: 3px solid transparent;
             &:active,&:focus:hover{
@@ -662,11 +666,11 @@
   background-color: transparent;
   color: $brand-danger;
 }
+      &:first-child {
 
-            &:last-child {
-                border-left: 2px solid #000;
-                margin-left: -4px;
+                  margin-right: -4px;
             }
+          padding: 0 10px;
         }
     }
 }
@@ -919,4 +923,46 @@ height: 100vh;
               display: none;
           }
 }
+}
+//flexible
+.flexible{
+  .petslider{
+    padding: 60px 0;
+  }
+  .pd0{
+    padding: 0 5px;
+  }
+  .pdt10{
+    padding-top: 10px;
+  }
+  .petslider .test-banner {
+    position: absolute;
+    z-index: 1;
+    width: 140px;
+    top: 0px;
+}
+.flexible-img{
+  position: relative;
+  h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+        @include transform(translate(-50%,-50%));
+        font-weight: 500;
+        color: $white;
+        width: 51%;
+  }
+}
+}
+.spc-set{
+  display: block;
+text-align: center;
+}
+.pdf{
+  display: inline-block;
+
+}
+.pdf-desc{
+  display: inline-block;
+  width: 85%;
 }
