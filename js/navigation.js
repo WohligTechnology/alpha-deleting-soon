@@ -47,6 +47,12 @@ var navigationservice = angular.module('navigationservice', [])
             name: "Rigid",
             classis: "active",
             anchor: "rigid",
+            subnavs: [{
+                name: "PP/PE Bags & Liners",
+                classis: "active",
+                anchor: "bags-liners",
+                // isId: "yes",
+            }]
             // isId: "no",
         }]
     },

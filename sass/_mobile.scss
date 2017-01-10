@@ -1,3 +1,7 @@
+@media (max-width:1200px) {}
+@media (max-width: $screen-md-max) {
+
+}
 @media (max-width: $screen-sm-max) {
     .timeline li .timeline-panel {
         width: 44%;
@@ -366,6 +370,66 @@
     display: inline-block;
     width: 85%;
   }
+  .nav > li > a {
+      position: relative;
+      display: block;
+      padding: 6px 18px 6px;
+      text-transform: uppercase;
+      color: #1c1b16 !important;
+      font-family: 'roboto';
+      font-size: 12px;
+      text-align: center;
+  }
+  .slider-nav ul li {
+    padding: 6px 20px;
+}
+.slider-nav ul li a {
+    font-size: 12px;
+}
+.btn-red {
+    font-size: 12px;
+    padding: 7px 26px !important;
+}
+ .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+}
+}
+
+@media (max-width:480px){
+  .j2 .jr2-text, .j3 .jr2-text {
+      width: 160px;
+      position: inherit;;
+     left: inherit;
+     top: inherit;
+  }
+  .year-r {
+    font-size: 26px;
 
 }
-@media (max-width: $screen-md-max) {}
+.desc {
+    font-size: 13px;
+}
+.j2 .jr2-img, .j3 .jr2-img {
+position: inherit;
+    right: inherit;
+}
+.j3 .jr3-text {
+    width: 160px;
+    top: 0;
+}
+.j3 .jr3-img {
+  position: inherit;
+    right: inherit;
+    top: inherit;
+}
+.j2, .j3 {
+    position: relative;
+    padding: 20px 0px;
+}
+}

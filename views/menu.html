@@ -1,11 +1,11 @@
-<ul class="nav navbar-nav">
+<ul class="nav navbar-nav hidden-xs">
   <li ng-repeat="menu in navigation" class="{{menu.classis}}">
-    <a ui-sref="{{menu.anchor}}" ng-if="menu.anchor">{{menu.name}}</a>
-    <a href="{{menu.link}}" ng-if="menu.link">{{menu.name}}</a>
-    <ul class="drop-menu dropdown-menu " ng-if="menu.subnav!='';">
-      <li ng-repeat="submenu in menu.subnav" class="{{menu.classis}} dropdown-submenu">
-        <a ui-sref="{{submenu.anchor}}" ng-if="submenu.anchor">{{submenu.name}}</a>
-        <a herf="{{submenu.link}}" ng-if="submenu.link">{{submenu.name}}</a>
+    <a ui-sref="{{menu.anchor}}" ng-if="menu.anchor" class="dropdown-toggle" >{{menu.name}}</a>
+    <a href="{{menu.link}}" ng-if="menu.link" class="dropdown-toggle" >{{menu.name}}</a>
+    <ul class="drop-menu dropdown-menu" ng-if="menu.subnav!='';">
+      <li ng-repeat="submenu in menu.subnav" class="{{menu.classis}} dropdown-submenu ">
+        <a ui-sref="{{submenu.anchor}}" ng-if="submenu.anchor" class="dropdown-toggle" >{{submenu.name}}</a>
+        <a herf="{{submenu.link}}" ng-if="submenu.link" class="dropdown-toggle">{{submenu.name}}</a>
         <ul class=" sub-sec" ng-if="submenu.subnavs!='';">
           <li ng-repeat="sub in submenu.subnavs" class="{{menu.classis}}">
             <a ui-sref="{{sub.anchor}}" ng-if="sub.anchor">{{sub.name}}</a>
@@ -14,5 +14,54 @@
         </ul>
       </li>
     </ul>
+  </li>
+</ul>
+<ul class="nav navbar-nav hidden-md hidden-lg hidden-sm">
+  <li>
+    <a href="">
+      about us
+    </a>
+  </li>
+  <li>
+    <a href="" data-toggle="dropdown" class="dropdown-toggle">
+      product
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a ui-sref="bags-liners">
+          PP/PE Bags & Liners
+        </a>
+      </li>
+      <li>
+        <a ui-sref="pof">
+        POF Shrink Film
+        </a>
+      </li>
+      <li>
+        <a ui-sref="speciality-film">
+        Speciality Films
+        </a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a ui-sref="news">
+    news
+    </a>
+  </li>
+  <li>
+    <a ui-sref="events">
+    events
+    </a>
+  </li>
+  <li>
+    <a ui-sref="careers">
+      careers
+    </a>
+  </li>
+  <li>
+    <a ui-sref="contact-us">
+      contact us
+    </a>
   </li>
 </ul>
