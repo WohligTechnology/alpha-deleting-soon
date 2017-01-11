@@ -149,6 +149,7 @@
 }
 
 .news-sec {
+  padding-bottom: 15px;
     h4 {
         color: $brand-danger;
         font-weight: 400;
@@ -159,7 +160,7 @@
 
     p {
         font-size: 16px;
-        // text-align: justify;
+        text-align: justify;
         letter-spacing: 0.5px;
         line-height: 18px;
         font-family: 'roboto';
@@ -170,8 +171,8 @@
         border: 2px solid $brand-danger;
         color: $brand-danger;
         font-weight: 700;
-        padding: 5px 10px 2px;
-        text-transform: uppercase;
+        padding: 5px 10px 4px;
+        // text-transform: uppercase;
     }
 }
 //petbottles
@@ -355,13 +356,14 @@
         position: absolute;
         transform: rotate(-90deg);
         top: 35%;
-        right: -70px;
+        right: -92px;
+        text-transform: uppercase;
         border-radius: 4px;
         background-color: transparent;
         color: $brand-danger;
         border: 1px solid;
         border-bottom: none;
-        font-size: 20px;
+        font-size: 18px;
     }
 }
 

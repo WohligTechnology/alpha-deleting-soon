@@ -192,6 +192,18 @@
         padding: 0 30px;
 
         .flexslider {
+          .flex-direction-nav a.flex-next:before {
+              content: '';
+              background: url("../img/rarrow.png") no-repeat center;
+              width: 50px;
+              height: 60px;
+          }
+          .flex-direction-nav a.flex-prev:before {
+              content: '';
+              background: url("../img/larrow.png") no-repeat center;
+              width: 50px;
+              height: 60px;
+          }
             // margin-right: 0;
             .flex-direction-nav {
                 .flex-next {
@@ -402,6 +414,366 @@
 }
 
 @media (max-width:480px){
+  .tldate:before {
+      display: none;
+  }
+
+  .tldate:after {
+      display: none;
+  }
+
+  .journey-sec {
+      display: block;
+  }
+
+  .page-header h1 {
+      font-size: 2.26em;
+  }
+
+  .line-right:before {
+      left: -50px !important;
+      width: 50px;
+  }
+
+  .text-right p {
+      text-align: left;
+  }
+
+  .about-us {
+      .black-sec {
+          margin: 0;
+      }
+
+      .pdt-40 {
+          padding: 0 0 10px;
+      }
+
+      .abt-img1 {
+          padding-bottom: 15px;
+      }
+
+      .vis-mis {
+          margin: 20px;
+          padding: 0;
+
+          p {
+              text-align: justify;
+          }
+      }
+  }
+
+  .events {
+      .content-sec p {
+          text-align: justify;
+      }
+
+      .event-info .text-sec {
+          padding: 30px;
+      }
+  }
+
+  .line-left:before {
+      left: -54px !important;
+      width: 55px;
+  }
+
+  .news {
+      .content-sec {
+          padding-top: 10px;
+
+          .category {
+              padding-bottom: 15px;
+          }
+
+          .category-selection {
+              padding-bottom: 0;
+
+              .selectpicker {
+                  vertical-align: -webkit-baseline-middle;
+                  font-size: 11px;
+                  padding: 3px 42px 0 12px;
+              }
+          }
+      }
+
+      .news-sec:last-child {
+          padding-bottom: 10px;
+      }
+  }
+
+  .col-pd {
+      padding-right: 10px;
+      padding-left: 10px;
+  }
+
+  .enquiry-form {
+      .form-group:last-child {
+          margin-top: 15px;
+      }
+
+      .table-sec {
+          .pd120 {
+              padding: 0;
+          }
+      }
+
+      .slider-sec {
+          .pd40 {
+              padding: 0;
+              margin: 0;
+          }
+      }
+  }
+
+  .mtop-btm {
+      margin-top: 30px;
+  }
+
+  .add {
+      padding: 10px;
+  }
+
+  .count {
+      .col-black {
+          li {
+              padding: 18px 40px;
+              border: 0;
+              border-bottom: 1px solid;
+          }
+      }
+  }
+
+  .logo {
+      width: 144px;
+  }
+
+  .client {
+      padding: 0 30px;
+
+      .flexslider {
+        .flex-direction-nav a.flex-next:before {
+            content: '';
+            background: url("../img/rarrow.png") no-repeat center;
+            width: 50px;
+            height: 60px;
+        }
+        .flex-direction-nav a.flex-prev:before {
+            content: '';
+            background: url("../img/larrow.png") no-repeat center;
+            width: 50px;
+            height: 60px;
+        }
+          // margin-right: 0;
+          .flex-direction-nav {
+              .flex-next {
+                  right: -14px !important;
+
+                  &:before {
+                      width: 39px!important;
+                  }
+              }
+
+              .flex-prev {
+                  left: -14px !important;
+                  &:before {
+                      width: 39px!important;
+                  }
+              }
+          }
+
+          img {
+              width: auto;
+          }
+
+          li {
+              // width: 290px!important;
+          }
+      }
+  }
+
+  .nw-slider {
+      .flexslider {
+          .flex-direction-nav {
+              display: none;
+          }
+      }
+  }
+
+  .ft-40 {
+      font-size: 28px;
+  }
+
+  .news-sec {
+      padding-bottom: 20px;
+
+      p {
+          text-align: justify;
+      }
+  }
+
+  .profile-box {
+      padding: 10px;
+      text-align: justify;
+  }
+
+  .petslider {
+      .flexslider {
+          .flex-direction-nav {
+              display: none;
+          }
+      }
+  }
+
+  .pet {
+      .pd100 {
+          padding: 0;
+      }
+  }
+
+  .pdb10 {
+      padding-bottom: 10px;
+  }
+
+  .also-sec {
+      h3 {
+          font-size: 20px;
+      }
+  }
+
+  .pd100 {
+      padding: 0 !important;
+  }
+
+  .profile-desc {
+      height: 600px;
+  }
+
+  .pof {
+      .pd40 {
+          padding: 0 30px;
+          margin: 0;
+      }
+
+      .pd100 {
+          padding: 0;
+      }
+  }
+
+  .application-slider {
+      .flexslider {
+          .flex-control-nav {
+              display: block!important;
+          }
+
+          .flex-control-paging li a.flex-active {
+              background-color: $brand-danger;
+          }
+
+          .flex-direction-nav {
+              display: none;
+          }
+      }
+  }
+
+  .nw-main-title {
+      h1 {
+          font-size: 20px;
+      }
+  }
+
+  .rl-news {
+      h3 {
+          font-size: 20px;
+      }
+  }
+
+  .pd-41 {
+      padding: 0;
+  }
+
+  .pad-l-r {
+      padding: 0;
+  }
+.pof{
+.pd0 {
+    padding: 5px;
+}
+}
+  .flexible {
+      .petslider {
+          padding: 5px 0;
+      }
+
+      .flexible-img {
+          h3 {
+              text-align: center;
+              width: 100%;
+              margin: 0;
+              font-size: 20px;
+          }
+      }
+
+      .pdt10 {
+          padding-top: 5px;
+      }
+
+      .pd0 {
+          padding: 5px;
+      }
+  }
+  .slider-nav ul li {
+  padding: 15px 20px;
+}
+.slider-nav ul li a {
+  font-size: 16px;
+}
+.text-up{
+      padding: 0px 10px;
+}
+.petslider{
+  padding-top: 0;
+}
+.pdf{
+  display: inline-block;
+width: 13%;
+}
+.pdf-desc{
+  display: inline-block;
+  width: 85%;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 6px 18px 6px;
+    text-transform: uppercase;
+    color: #1c1b16 !important;
+    font-family: 'roboto';
+    font-size: 12px;
+    text-align: center;
+}
+.slider-nav ul li {
+  padding: 6px 20px;
+}
+.slider-nav ul li a {
+  font-size: 12px;
+}
+.btn-red {
+  font-size: 12px;
+  padding: 7px 26px !important;
+}
+.dropdown-menu {
+  position: static;
+  float: none;
+  width: auto;
+  margin-top: 0;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+}
+.zeropd{
+  padding: 0;
+}
+
   .j2 .jr2-text, .j3 .jr2-text {
       width: 160px;
       position: inherit;;

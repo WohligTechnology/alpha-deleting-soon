@@ -2,22 +2,22 @@
   <div class="home-slider">
     <flex-slider flex-slide="s in mySlides track by $index" prev-text="" next-text="">
         <li>
-            <img ng-src="{{s}}" class="img-responsive ban-full">
+            <a ui-sref="{{s.link}}"><img ng-src="{{s.img}}" class="img-responsive ban-full"></a>
         </li>
     </flex-slider>
     <div class="slider-nav">
       <div class="al-list text-center">
         <ul class="text-up">
-          <li class="active">
+          <!-- <li class="active">
           <a href="">Alpha at Exhibition</a>
+          </li> -->
+          <li>
+          <a href="">POF Shrink Films</a>
+          </li>
+          <li>
+          <a href="">Speciality Films</a>
           </li>
           <!-- <li>
-          <a href="">LOREM IPSUM</a>
-          </li>
-          <li>
-          <a href="">LOREM IPSUM</a>
-          </li>
-          <li>
           <a href="">LOREM IPSUM</a>
           </li> -->
         </ul>
@@ -34,7 +34,7 @@
       </div>
       <div class="side-pad ">
         <div class="col-md-6 padding0">
-          <div class="pr-box img-animated" ui-sref="bags-liners">
+          <div class="pr-box img-animated" ui-sref="flexible">
             <img src="img/p1.jpg" alt="" class="img-responsive width100 hover-sec">
             <div class="over-text">
               <h2 class="text-up text-center color-white font-bold">FLEXIBLE</h2>
@@ -98,7 +98,7 @@
       <div class="al-title text-center">
         <h1 class="text-up color-red font-bold font-keem ft-40">clients</h1>
       </div>
-      <div class="col-md-12">
+      <div class="col-md-12 zeropd">
         <div class="client">
           <flex-slider flex-slide="item in client track by $index" animation="slide" item-width="230" item-margin="5" animationloop="true" move="1" slideshow-Speed="2000">
               <li>
@@ -143,7 +143,7 @@ Diversified to manufacture Mulch film</p>
             <div class="jr3-text display-inline">
               <h4 class="color-red year-r font-norica">2015</h4>
               <p class="desc">
-Diversified to manufacture Mulch film</p>
+ Diversified to manufacture Collation Shrink film</p>
             </div>
             <div class="jr3-img">
   <img src="img/j3.png" alt="" class="img-responsive">
@@ -196,7 +196,7 @@ Diversified to manufacture Mulch film</p>
               <p class="color-white text-cap">{{item.title}}</p>
             </div>
             <div class="nw-link">
-              <a ui-sref="news-detail({id:item.id})" class="text-up">read more</a>
+              <a ui-sref="news-detail({id:item.id})" class="">Read more</a>
             </div>
           </div>
         </li>
@@ -214,7 +214,7 @@ Diversified to manufacture Mulch film</p>
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4457.06591579484!2d72.76595935090985!3d21.153706937399495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e510c7130eb%3A0x35506354c4ef7dea!2sAlpha+Plastomers!5e0!3m2!1sen!2sin!4v1482304925785" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 <div class="">
   <div class="add">
-    <h4 class="color-red font-bold font-keem">Aplha Plastomers</h4>
+    <h4 class="color-red font-bold font-keem text-up">Alpha Plastomers</h4>
     <i class="fa fa-phone"> <span>+91 72019 89000</span></i> <br>
     <i class="fa fa-envelope"> <span>info@alpha.co.in</span></i> <br>
     <i class="fa fa-home"> <span class="main-add">506, Union Heights, <br> Beside Rahulraj Mall, Vesu <br> Surat-395 007, Gujarat, INDIA</span></i>

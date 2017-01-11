@@ -8,9 +8,23 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         TemplateService.footer = "views/footer2.html"
 
         $scope.mySlides = [
-            'img/banner.jpg',
-            'img/banner.jpg'
+            // 'img/banner.jpg',
+            // 'img/banner2.jpg',
+            // 'img/banner3.jpg'
+            // {
+            //   img:"img/banner.jpg",
+            //   link:""
+            // },
+            {
+              img:"img/banner2.jpg",
+              link:"pof"
+            },
+            {
+              img:"img/banner3.jpg",
+              link:"speciality-film"
+            }
         ];
+
         $scope.client = [
             'img/client/1.jpg',
             'img/client/2.jpg',

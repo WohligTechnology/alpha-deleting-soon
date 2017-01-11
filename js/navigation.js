@@ -19,7 +19,7 @@ var navigationservice = angular.module('navigationservice', [])
         //     anchor: "home"
         // }]
     }, {
-        name: "Product",
+        name: "Products",
         classis: "active",
         anchor: "product",
         subnav: [{
