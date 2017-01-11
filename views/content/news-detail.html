@@ -74,12 +74,12 @@
   <h2 class="color-red font-keem">
     RELATED NEWS
   </h2>
-    <div class="rl-nw">
-      <img src="img/news/2.jpg" alt="" class="img-responsive" ui-sref="news-detail({id:'2'})">
-      <h4 class="color-red font-keem text-up">A major stride for Alpha
-at the Expo Pack Mexico</h4>
+    <div class="rl-nw" ng-repeat="data in relatedNews">
+      <img src="{{data.image}}" alt="" class="img-responsive" ui-sref="news-detail({id:data.id})" ng-if="data.id!=stateId">
+      <h4 class="color-red font-keem text-up" ng-if="data.id!=stateId">{{data.title}}</h4>
     </div>
-    <div class="rl-nw">
+
+    <!-- <div class="rl-nw">
       <img src="img/news/3.jpg" alt="" class="img-responsive" ui-sref="news-detail({id:'3'})">
       <h4 class="color-red font-keem text-up">Alpha Pharma Roorkee
 commissions ASB...</h4>
@@ -89,6 +89,7 @@ commissions ASB...</h4>
       <h4 class="color-red font-keem text-up">First Annual Meet</h4>
 
     </div>
+     -->
 </div>
       </div>
     </div>
