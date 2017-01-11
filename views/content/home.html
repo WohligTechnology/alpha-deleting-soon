@@ -1,25 +1,33 @@
 <section>
   <div class="home-slider">
-    <flex-slider flex-slide="s in mySlides track by $index" prev-text="" next-text="">
+    <flex-slider  ng-if="!secondTab" flex-slide="s in mySlides track by $index" prev-text="" next-text="">
         <li>
             <a ui-sref="{{s.link}}"><img ng-src="{{s.img}}" class="img-responsive ban-full"></a>
+
         </li>
     </flex-slider>
+    <flex-slider  ng-if="secondTab" flex-slide="s in mySlides2 track by $index" prev-text="" next-text="">
+        <li ng-if="!secondTab">
+            <a ui-sref="{{s.link}}"><img ng-src="{{s.img}}" class="img-responsive ban-full"></a>
+
+        </li>
+        <li ng-if="secondTab">
+            <a ui-sref="{{s.link}}"><img ng-src="{{s.img}}" class="img-responsive ban-full"></a>
+
+        </li>
+    </flex-slider>
+
     <div class="slider-nav">
       <div class="al-list text-center">
         <ul class="text-up">
-          <!-- <li class="active">
-          <a href="">Alpha at Exhibition</a>
-          </li> -->
-          <li>
-          <a href="">POF Shrink Films</a>
+
+          <li ng-click="clickMe1();">
+          <a>POF Shrink Films</a>
           </li>
-          <li>
-          <a href="">Speciality Films</a>
+          <li ng-click="clickMe2();">
+          <a >Speciality Films</a>
           </li>
-          <!-- <li>
-          <a href="">LOREM IPSUM</a>
-          </li> -->
+
         </ul>
       </div>
     </div>

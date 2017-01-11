@@ -7,23 +7,58 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.navigation = NavigationService.getnav();
         TemplateService.footer = "views/footer2.html"
 
+
+
         $scope.mySlides = [
-            // 'img/banner.jpg',
-            // 'img/banner2.jpg',
-            // 'img/banner3.jpg'
-            // {
-            //   img:"img/banner.jpg",
-            //   link:""
-            // },
             {
-              img:"img/banner2.jpg",
-              link:"pof"
+              "id":"1",
+              "img":"img/banner2.jpg",
+              "link":"pof"
             },
             {
-              img:"img/banner3.jpg",
-              link:"speciality-film"
+              "id":"2",
+              "img":"img/banner3.jpg",
+              "link":"speciality-film"
             }
-        ];
+
+          ];
+//           $scope.myslidesss=[];
+//
+//
+// $scope.startfrom = 0;
+$scope.secondTab = false;
+          $scope.clickMe2 =function (){
+            // $scope.mySlides = [];
+            $scope.secondTab = true;
+            $scope.mySlides2 = _.reverse($scope.mySlides);
+            console.log('$scope.clickMe2',$scope.mySlides);
+          };
+          $scope.clickMe1 =function (){
+            $scope.secondTab = false;
+            if($scope.mySlides2){
+              $scope.mySlides = _.reverse($scope.mySlides2);
+            }
+
+            }
+// _.takeRight($scope.mySlides, 2);
+
+//
+//             console.log("id",id);
+//             var founIndex= _.findIndex($scope.mySlides,function(key){
+//             return key.id == id;
+//             });
+//             console.log("founIndex",founIndex);
+//               $scope.myslidesss=$scope.mySlides.splice(founIndex,1)
+//               console.log('myslidesss',$scope.myslidesss);
+//
+//         }
+// $scope.clickMe('1');
+        // console.log("$scope.founIndexId",$scope.founIndexId);
+// $scope.myslidesss=
+// $scope.myslidesss= _.without($scope.mySlides , { 'id': '1'});
+// console.log("$scope.myslidesss",$scope.myslidesss);
+
+
 
         $scope.client = [
             'img/client/1.jpg',
@@ -82,6 +117,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.menutitle = NavigationService.makeactive("Contact Us"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
+        $scope.tab = 1;
 
     })
     .controller('FlexibleCtrl', function($scope, TemplateService, NavigationService, $timeout) {
@@ -233,7 +269,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
           }
         ]
-    
+
         $scope.newsdetail = [{
             "img": "",
             "title": "Meet Alpha’s Plastic Super Family in Mexico! ",
